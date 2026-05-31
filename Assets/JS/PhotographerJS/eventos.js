@@ -1,5 +1,5 @@
 const eventos = document.getElementById("fotografo-eventos");
-const fotografoId = localStorage.getItem("fotografoId") || "1";
+const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem("fotografoId");
 
 function getApiUrl(path) {
     if (typeof apiUrl === "function") return apiUrl(path);
@@ -15,7 +15,7 @@ function fetchJson(url) {
 }
 
 function showEventos() {
-    if (!eventos) return;
+    if (!eventos || !fotografoId) return;
     eventos.innerHTML = "";
 
     fetchJson(`/eventos/fotografo/${fotografoId}`)
@@ -67,4 +67,6 @@ if (eventos) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", showEventos);
+if (fotografoId) {
+    document.addEventListener("DOMContentLoaded", showEventos);
+}

@@ -1,5 +1,5 @@
 const formulario = document.getElementById("formulario");
-const fotografoId = localStorage.getItem('fotografoId') || '1';
+const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
 
 function getApiUrl(path) {
     if (typeof apiUrl === 'function') return apiUrl(path);
@@ -9,6 +9,7 @@ function getApiUrl(path) {
 
 async function handleProfileSubmit(event) {
     event.preventDefault();
+    if (!fotografoId) return;
     
     const profilePicInput = document.getElementById("profilePic");
     const fotoPerfilUrl = document.getElementById("fotoPerfilUrl");
@@ -57,10 +58,14 @@ async function handleProfileSubmit(event) {
     .catch(err => { console.error(err); alert(err && err.message ? err.message : 'Error'); });
 }
 
-formulario.addEventListener("submit", handleProfileSubmit);
+if (formulario) {
+    formulario.addEventListener("submit", handleProfileSubmit);
+}
 
 /* FUNCION PARA Q APAREZCA LA INFO DE PERFIL */
 function cargar_perfil(){
+    if (!fotografoId) return;
+
     fetch(getApiUrl(`/fotografos/${fotografoId}`))
         .then(res => {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -80,4 +85,6 @@ function cargar_perfil(){
         .catch(console.error);
 }
 
-document.addEventListener('DOMContentLoaded', cargar_perfil);
+if (fotografoId) {
+    document.addEventListener('DOMContentLoaded', cargar_perfil);
+}

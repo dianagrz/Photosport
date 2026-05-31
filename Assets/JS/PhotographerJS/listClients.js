@@ -2,7 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const idEvento = params.get("id");
 const clientes = document.getElementById("clientes");
 const competenciaTitulo = document.getElementById("competencia");
-const fotografoId = localStorage.getItem("fotografoId") || "1";
+const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem("fotografoId");
 
 const inputFotosCompra = document.createElement("input");
 inputFotosCompra.type = "file";
@@ -12,14 +12,24 @@ inputFotosCompra.style.display = "none";
 document.body.appendChild(inputFotosCompra);
 
 function estadoCompra(entregado) {
-    return Number(entregado) === 1 ? "Entregada" : "Pendiente";
+    return Number(entregado) === 1 ? "Entregado" : "Pendiente";
+}
+
+function estadoClase(entregado) {
+    return Number(entregado) === 1 ? "entregado" : "pendiente";
 }
 
 function fechaCompra(fecha) {
     return fecha ? new Date(fecha).toLocaleDateString("es-MX") : "Sin fecha";
 }
 
+function detalleCompra(label, value) {
+    return value ? `<p><strong>${label}:</strong> ${value}</p>` : "";
+}
+
 function getCompras() {
+    if (!fotografoId || !idEvento) return;
+
     fetch(apiUrl(`/clientes/${fotografoId}/${idEvento}`))
         .then(res => {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -36,12 +46,17 @@ function getCompras() {
                 clientes.innerHTML += `
                 <div class="evento-card" data-id="${compra.id}" data-compra-id="${compra.id_compra}">
                     <h3>${compra.nombre} ${compra.apellido || ""}</h3>
-                    <p>Estado: ${estadoCompra(compra.entregado)}</p>
-                    <p>Fecha: ${fechaCompra(compra.fecha)}</p>
-                    <p>Correo: ${compra.correo || "No disponible"}</p>
-                    <p>Paquete: ${compra.paquete || "Sin paquete"}</p>
-                    <p>Categoria: ${compra.categoria || "No registrada"}</p>
-                    <p>Pruebas: ${compra.pruebas || "No registradas"}</p>
+                    ${detalleCompra("Atleta", compra.atleta)}
+                    <p><strong>Fotógrafo:</strong> ${compra.fotografo || "No disponible"}</p>
+                    <p><strong>Fecha:</strong> ${fechaCompra(compra.fecha)}</p>
+                    <p><strong>Correo:</strong> ${compra.correo || "No disponible"}</p>
+                    <p><strong>Paquete:</strong> ${compra.paquete || "Sin paquete"}</p>
+                    ${detalleCompra("Edad", compra.edad)}
+                    <p><strong>Categoria:</strong> ${compra.categoria || "No registrada"}</p>
+                    ${detalleCompra("Rama", compra.rama)}
+                    ${detalleCompra("Equipo", compra.equipo)}
+                    <p><strong>Pruebas:</strong> ${compra.pruebas || "No registradas"}</p>
+                    <p><strong>Estado:</strong> <span class="status ${estadoClase(compra.entregado)}">${estadoCompra(compra.entregado)}</span></p>
 
                     <div class="acciones-evento">
                         <button data-accion="subir">Subir fotos</button>
@@ -57,12 +72,14 @@ function getCompras() {
         });
 }
 
-fetch(apiUrl(`/eventos/${idEvento}`))
-    .then(res => res.json())
-    .then(data => {
-        competenciaTitulo.textContent = data.nombre || "";
-    })
-    .catch(console.error);
+if (idEvento) {
+    fetch(apiUrl(`/eventos/${idEvento}`))
+        .then(res => res.json())
+        .then(data => {
+            if (competenciaTitulo) competenciaTitulo.textContent = data.nombre || "";
+        })
+        .catch(console.error);
+}
 
 if (clientes) {
     clientes.addEventListener("click", function(e) {
@@ -136,4 +153,6 @@ inputFotosCompra.addEventListener("change", function() {
     });
 });
 
-getCompras();
+if (fotografoId) {
+    getCompras();
+}

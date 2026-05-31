@@ -16,9 +16,40 @@ const conexion = mysql.createConnection({
     password: ""
 });
 
+const compraDetailColumns = {
+    atleta: 'VARCHAR(200)',
+    edad: 'INT',
+    categoria: 'VARCHAR(100)',
+    rama: 'VARCHAR(50)',
+    equipo: 'VARCHAR(150)',
+    pruebas: 'VARCHAR(500)',
+    metodo_pago: 'VARCHAR(100)'
+};
+
+function ensureCompraDetailColumns() {
+    conexion.query('SHOW COLUMNS FROM compra', (err, rows) => {
+        if (err) {
+            console.error('No se pudieron revisar columnas de compra:', err.message || err);
+            return;
+        }
+
+        const existingColumns = new Set(rows.map(row => row.Field));
+        Object.entries(compraDetailColumns).forEach(([column, type]) => {
+            if (existingColumns.has(column)) return;
+
+            conexion.query(`ALTER TABLE compra ADD COLUMN ${column} ${type}`, (alterErr) => {
+                if (alterErr) {
+                    console.error(`No se pudo agregar compra.${column}:`, alterErr.message || alterErr);
+                }
+            });
+        });
+    });
+}
+
 conexion.connect(err => {
     if (err) throw err;
     console.log("Conectado a MySQL (PHOTOSPORT)");
+    ensureCompraDetailColumns();
 });
 
 // Register (cliente or fotografo)
@@ -35,15 +66,15 @@ app.post('/registro', (req, res) => {
 
         if (tipo === 'cliente') {
             const q = 'INSERT INTO cliente (nombre, apellido, correo, telefono, contrasena) VALUES (?,?,?,?,?)';
-            conexion.query(q, [nombre, apellido, correo, telefono || null, password], (err2) => {
+            conexion.query(q, [nombre, apellido, correo, telefono || null, password], (err2, result) => {
                 if (err2) return res.status(500).json({ message: 'Error al crear cliente' });
-                res.json({ message: 'Cliente registrado correctamente', tipo: 'cliente' });
+                res.json({ message: 'Cliente registrado correctamente', tipo: 'cliente', id: result.insertId });
             });
         } else if (tipo === 'fotografo') {
             const q = 'INSERT INTO fotografo (nombre, apellido, correo, telefono, contrasena) VALUES (?,?,?,?,?)';
-            conexion.query(q, [nombre, apellido, correo, telefono || null, password], (err2) => {
+            conexion.query(q, [nombre, apellido, correo, telefono || null, password], (err2, result) => {
                 if (err2) return res.status(500).json({ message: 'Error al crear fotógrafo' });
-                res.json({ message: 'Fotógrafo registrado correctamente', tipo: 'fotografo' });
+                res.json({ message: 'Fotógrafo registrado correctamente', tipo: 'fotografo', id: result.insertId });
             });
         } else {
             res.status(400).json({ message: 'Tipo de usuario inválido' });
@@ -307,11 +338,65 @@ app.post('/inscribir', (req, res) => {
 
 // Compras (contratar paquete)
 app.post('/compra', (req, res) => {
-    const { id_paquete, id_cliente, id_evento } = req.body;
-    const q = 'INSERT INTO compra (id_paquete, id_cliente, id_evento, fecha, entregado) VALUES (?,?,?,CURDATE(),?)';
-    conexion.query(q, [id_paquete || null, id_cliente || null, id_evento || null, false], (err) => {
+    const {
+        id_paquete,
+        id_cliente,
+        id_evento,
+        atleta,
+        edad,
+        categoria,
+        rama,
+        equipo,
+        pruebas,
+        metodo_pago
+    } = req.body;
+
+    if (!id_paquete || !id_cliente || !id_evento) {
+        return res.status(400).json({ message: 'Faltan datos para crear la compra' });
+    }
+
+    const edadValue = edad === '' || edad == null ? null : Number(edad);
+    const normalizedEdad = Number.isFinite(edadValue) ? edadValue : null;
+    const q = `INSERT INTO compra (
+                    id_paquete,
+                    id_cliente,
+                    id_evento,
+                    fecha,
+                    entregado,
+                    atleta,
+                    edad,
+                    categoria,
+                    rama,
+                    equipo,
+                    pruebas,
+                    metodo_pago
+                )
+                SELECT p.id_paquete, ?, ?, CURDATE(), ?, ?, ?, ?, ?, ?, ?, ?
+                FROM paquete_fotografico p
+                JOIN fotografo_evento fe
+                     ON fe.id_fotografo = p.id_fotografo
+                    AND fe.id_evento = ?
+                WHERE p.id_paquete = ?`;
+
+    conexion.query(q, [
+        id_cliente,
+        id_evento,
+        false,
+        atleta || null,
+        normalizedEdad,
+        categoria || null,
+        rama || null,
+        equipo || null,
+        pruebas || null,
+        metodo_pago || 'tarjeta',
+        id_evento,
+        id_paquete
+    ], (err, result) => {
         if (err) return res.status(500).json({ message: 'Error al crear compra' });
-        res.json({ message: 'Compra creada correctamente' });
+        if (!result || result.affectedRows === 0) {
+            return res.status(400).json({ message: 'El paquete no corresponde a un fotografo inscrito en el evento' });
+        }
+        res.json({ message: 'Compra creada correctamente', id_compra: result.insertId });
     });
 });
 
@@ -457,6 +542,15 @@ app.get('/paquetes', (req, res) => {
     });
 });
 
+app.get('/paquetes/:id', (req, res) => {
+    const id = req.params.id;
+    conexion.query('SELECT * FROM paquete_fotografico WHERE id_paquete = ?', [id], (err, rows) => {
+        if (err) return res.status(500).json({ message: 'Error' });
+        if (!rows[0]) return res.status(404).json({ message: 'Paquete no encontrado' });
+        res.json(rows[0]);
+    });
+});
+
 app.post('/paquetes', (req, res) => {
     const { id_fotografo, nombre, precio, cobertura, descripcion } = req.body;
     const q = 'INSERT INTO paquete_fotografico (id_fotografo, nombre, precio, cobertura, descripcion) VALUES (?,?,?,?,?)';
@@ -468,10 +562,18 @@ app.post('/paquetes', (req, res) => {
 
 app.put('/paquetes/:id', (req, res) => {
     const id = req.params.id;
-    const { nombre, precio, cobertura, descripcion } = req.body;
-    const q = 'UPDATE paquete_fotografico SET nombre = ?, precio = ?, cobertura = ?, descripcion = ? WHERE id_paquete = ?';
-    conexion.query(q, [nombre, precio, cobertura, descripcion, id], (err) => {
+    const { id_fotografo, nombre, precio, cobertura, descripcion } = req.body;
+    let q = 'UPDATE paquete_fotografico SET nombre = ?, precio = ?, cobertura = ?, descripcion = ? WHERE id_paquete = ?';
+    const values = [nombre, precio, cobertura, descripcion, id];
+
+    if (id_fotografo) {
+        q += ' AND id_fotografo = ?';
+        values.push(id_fotografo);
+    }
+
+    conexion.query(q, values, (err, result) => {
         if (err) return res.status(500).json({ message: 'Error al actualizar paquete' });
+        if (!result || result.affectedRows === 0) return res.status(404).json({ message: 'Paquete no encontrado' });
         res.json({ message: 'Paquete actualizado' });
     });
 });
@@ -497,16 +599,25 @@ app.get('/clientes/:fotografoId/:eventoId', (req, res) => {
                       c.apellido,
                       c.correo,
                       p.nombre AS paquete,
-                      'No registrada' AS categoria,
-                      'No registradas' AS pruebas
-               FROM cliente c
-               JOIN compra ca ON c.id_cliente = ca.id_cliente
-               LEFT JOIN paquete_fotografico p ON ca.id_paquete = p.id_paquete
+                      CONCAT(f.nombre, ' ', f.apellido) AS fotografo,
+                      ca.atleta,
+                      ca.edad,
+                      ca.rama,
+                      ca.equipo,
+                      COALESCE(ca.categoria, 'No registrada') AS categoria,
+                      COALESCE(ca.pruebas, 'No registradas') AS pruebas
+               FROM compra ca
+               JOIN cliente c ON c.id_cliente = ca.id_cliente
+               JOIN paquete_fotografico p ON ca.id_paquete = p.id_paquete
+               JOIN fotografo f ON p.id_fotografo = f.id_fotografo
+               JOIN fotografo_evento fe
+                    ON fe.id_evento = ca.id_evento
+                   AND fe.id_fotografo = p.id_fotografo
                WHERE p.id_fotografo = ? AND ca.id_evento = ?
                ORDER BY ca.entregado ASC,
                         ca.fecha ASC,
                         ca.id_compra ASC`;
-    conexion.query(q, [eventoId, fotografoId], (err, rows) => {
+    conexion.query(q, [fotografoId, eventoId], (err, rows) => {
         if (err) return res.status(500).json({ message: 'Error' });
         res.json(rows);
     });

@@ -1,7 +1,7 @@
 const user = document.getElementById("user");
 const eventos = document.getElementById("cliente-eventos");
 const searchInput = document.getElementById("search");
-const clienteId = localStorage.getItem("clienteId") || "1";
+const clienteId = window.PhotoSportAuth ? window.PhotoSportAuth.getClienteId() : localStorage.getItem("clienteId");
 
 function setUserName() {
     const storedName = localStorage.getItem("userName") || localStorage.getItem("nombre") || "Usuario";
@@ -9,7 +9,7 @@ function setUserName() {
 }
 
 function loadClientName() {
-    if (!user) return;
+    if (!user || !clienteId) return;
     user.textContent = "Hola, Usuario";
 
     fetch(apiUrl(`/cliente/${clienteId}`))
@@ -55,6 +55,8 @@ function renderEventos(eventosData) {
 }
 
 function fetchEventos() {
+    if (!clienteId) return Promise.resolve([]);
+
     return fetch(apiUrl(`/eventos/cliente/${clienteId}`))
         .then(res => {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -72,6 +74,7 @@ function cargarEventos() {
 }
 
 function buscar() {
+    if (!searchInput) return;
     const busqueda = searchInput.value.trim().toLowerCase();
     fetchEventos().then(data => {
         if (!busqueda) {
@@ -88,6 +91,8 @@ function buscar() {
     });
 }
 
-setUserName();
-loadClientName();
-cargarEventos();
+if (clienteId) {
+    setUserName();
+    loadClientName();
+    cargarEventos();
+}

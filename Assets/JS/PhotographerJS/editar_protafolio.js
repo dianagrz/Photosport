@@ -11,7 +11,8 @@ if (subir_fotos) {
     subir_fotos.addEventListener("submit", function(event) {
         event.preventDefault();
         const formData = new FormData(this);
-        const fotografoId = localStorage.getItem('fotografoId') || '1';
+        const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
+        if (!fotografoId) return;
         
         // Add fotografo ID and upload type to the form data
         formData.append('id_fotografo', fotografoId);
@@ -36,7 +37,7 @@ if (subir_fotos) {
 }
 
 const imagenes = document.getElementById("imagenes");
-const fotografoId = localStorage.getItem('fotografoId') || '1';
+const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
 
 function getImageUrl(path) {
     if (!path) return "";
@@ -46,7 +47,7 @@ function getImageUrl(path) {
 
 /* FUNCION PARA Q APAREZCAN TODAS LAS IMAGENS AL CARGAR LA PAGINA */
 function showImages() {
-    if (!imagenes) return;
+    if (!imagenes || !fotografoId) return;
     imagenes.innerHTML="";
 
     fetch(getApiUrl(`/fotos?fotografo=${fotografoId}`))
@@ -63,7 +64,9 @@ function showImages() {
     })
     .catch(console.error);
 }
-showImages();
+if (fotografoId) {
+    showImages();
+}
 
 
 // LISTENER PARA BORRAR IMAGEN

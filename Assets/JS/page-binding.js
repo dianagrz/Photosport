@@ -35,6 +35,59 @@ window.apiUrl = function(path) {
     return String(path).startsWith('http') ? path : window.API_BASE + path;
 };
 
+const SESSION_KEYS = ['clienteId', 'fotografoId', 'userName', 'nombre', 'userType'];
+const SESSION_STORAGE_KEYS = ['photosportCompraPendiente'];
+
+function getLoginUrl() {
+    const pagesIndex = window.location.pathname.indexOf('/Pages/');
+    const basePath = pagesIndex >= 0 ? window.location.pathname.slice(0, pagesIndex) : '';
+    return `${window.location.origin}${basePath}/Pages/index.html`;
+}
+
+function clearPhotoSportSession() {
+    SESSION_KEYS.forEach(key => localStorage.removeItem(key));
+    SESSION_STORAGE_KEYS.forEach(key => sessionStorage.removeItem(key));
+}
+
+function getRequiredRole() {
+    const path = window.location.pathname;
+    if (path.includes('/Pages/client/')) return 'cliente';
+    if (path.includes('/Pages/photographer/')) return 'fotografo';
+    return null;
+}
+
+function hasRequiredSession(role) {
+    if (role === 'cliente') return Boolean(localStorage.getItem('clienteId'));
+    if (role === 'fotografo') return Boolean(localStorage.getItem('fotografoId'));
+    return true;
+}
+
+function redirectIfMissingSession() {
+    const role = getRequiredRole();
+    if (!role || hasRequiredSession(role)) return false;
+
+    window.PhotoSportAuth.isRedirecting = true;
+    window.location.replace(getLoginUrl());
+    return true;
+}
+
+function logout(targetUrl) {
+    clearPhotoSportSession();
+    window.location.replace(targetUrl || getLoginUrl());
+}
+
+window.PhotoSportAuth = {
+    isRedirecting: false,
+    clearSession: clearPhotoSportSession,
+    getClienteId: () => localStorage.getItem('clienteId'),
+    getFotografoId: () => localStorage.getItem('fotografoId'),
+    logout,
+    redirectIfMissingSession
+};
+
+redirectIfMissingSession();
+window.addEventListener('pageshow', redirectIfMissingSession);
+
 function fetchJson(url) {
     const full = window.apiUrl(url);
     return fetch(full).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); });
@@ -106,6 +159,16 @@ function renderPerfil(container, perfil) {
 
 // Bindings
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a').forEach(link => {
+        const label = link.textContent.trim().toLowerCase();
+        if (!label.includes('cerrar sesión') && !label.includes('cerrar sesion')) return;
+
+        link.addEventListener('click', event => {
+            event.preventDefault();
+            logout(link.href || getLoginUrl());
+        });
+    });
+
     // fotografos
     const fotosContainer = document.getElementById('fotografos');
     if (fotosContainer) {

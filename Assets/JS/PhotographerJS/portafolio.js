@@ -1,6 +1,6 @@
 const perfil = document.getElementById("perfil");
 const imagenes = document.getElementById("imagenes");
-const photographerId = localStorage.getItem('fotografoId') || '1';
+const photographerId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
 
 function fetchJson(url) {
     return fetch(url).then(res => {
@@ -50,5 +50,7 @@ function cargar_imagenes(){
     });
 }
 
-cargar_perfil();
-cargar_imagenes();
+if (photographerId) {
+    cargar_perfil();
+    cargar_imagenes();
+}

@@ -1,4 +1,4 @@
-const photographerId = localStorage.getItem('fotografoId') || '1';
+const photographerId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
 
 function safeNumber(value) {
     return Number(value || 0);

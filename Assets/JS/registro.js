@@ -19,9 +19,17 @@ registro.addEventListener("submit", function(event) {
     .then(d => {
         alert(d.message || 'Registrado correctamente');
         registro.reset();
+        if (window.PhotoSportAuth) {
+            window.PhotoSportAuth.clearSession();
+        }
+
         if (d.tipo === 'cliente') {
-            //window.location.href = "client/home_client.html";
+            localStorage.setItem('clienteId', d.id);
+            localStorage.setItem('userType', 'cliente');
+            window.location.href = "client/home_client.html";
         } else if (d.tipo === 'fotografo') {
+            localStorage.setItem('fotografoId', d.id);
+            localStorage.setItem('userType', 'fotografo');
             window.location.href = "photographer/home_photographer.html";
         }
     })

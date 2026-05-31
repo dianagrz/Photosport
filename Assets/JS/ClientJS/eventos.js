@@ -1,6 +1,6 @@
 const eventosContainer = document.getElementById("eventos-disponibles");
 const searchInput = document.getElementById("search");
-const clienteId = localStorage.getItem("clienteId") || "1";
+const clienteId = window.PhotoSportAuth ? window.PhotoSportAuth.getClienteId() : localStorage.getItem("clienteId");
 
 function renderEventos(data) {
     if (!eventosContainer) return;
@@ -28,6 +28,8 @@ function renderEventos(data) {
 }
 
 function fetchEventos() {
+    if (!clienteId) return Promise.resolve([]);
+
     return fetch(apiUrl(`/eventos/no-inscritos-cliente/${clienteId}`))
         .then(res => {
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -63,4 +65,6 @@ function buscar() {
     });
 }
 
-cargarEventos();
+if (clienteId) {
+    cargarEventos();
+}

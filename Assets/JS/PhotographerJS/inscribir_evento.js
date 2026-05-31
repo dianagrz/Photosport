@@ -1,7 +1,7 @@
 const eventos = document.getElementById("eventos");
 const busquedaInput = document.getElementById("busqueda");
 const solicitud = document.getElementById("solicitar");
-const fotografoId = localStorage.getItem("fotografoId") || "1";
+const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem("fotografoId");
 
 function fetchJson(url, options) {
     return fetch(apiUrl(url), options).then(async res => {
@@ -12,6 +12,8 @@ function fetchJson(url, options) {
 }
 
 function getEventosDisponibles() {
+    if (!fotografoId) return Promise.resolve([]);
+
     return fetchJson(`/eventos/no-inscritos/${fotografoId}`);
 }
 
@@ -119,4 +121,6 @@ if (solicitud) {
     });
 }
 
-document.addEventListener("DOMContentLoaded", showEventos);
+if (fotografoId) {
+    document.addEventListener("DOMContentLoaded", showEventos);
+}

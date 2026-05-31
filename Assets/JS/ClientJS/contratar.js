@@ -1,11 +1,30 @@
 const params = new URLSearchParams(window.location.search);
 const fotografoId = params.get("id");
 const eventoPreseleccionado = params.get("evento");
-const clienteId = localStorage.getItem("clienteId") || "1";
+const clienteId = window.PhotoSportAuth ? window.PhotoSportAuth.getClienteId() : localStorage.getItem("clienteId");
+const compraPendienteKey = "photosportCompraPendiente";
 
 const contratar = document.getElementById("contratar");
 const paqueteSelect = document.getElementById("paquete");
 const eventoSelect = document.getElementById("evento");
+
+function escapeAttr(value) {
+    return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/"/g, "&quot;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+}
+
+function selectedOptionData(select) {
+    if (!select || select.selectedIndex < 0) return {};
+    const option = select.options[select.selectedIndex];
+    return {
+        text: option ? option.textContent.trim() : "",
+        nombre: option ? option.dataset.nombre : "",
+        precio: option ? option.dataset.precio : ""
+    };
+}
 
 function cargarPaquetes() {
     if (!paqueteSelect || !fotografoId) return;
@@ -18,9 +37,11 @@ function cargarPaquetes() {
         .then(paquetes => {
             paqueteSelect.innerHTML = '<option value="">Selecciona un paquete</option>';
             paquetes.forEach(paquete => {
+                const rawPrecio = Number(paquete.precio || 0);
+                const precio = Number.isFinite(rawPrecio) ? rawPrecio : 0;
                 paqueteSelect.innerHTML += `
-                    <option value="${paquete.id_paquete}">
-                        ${paquete.nombre || "Paquete"} - $${Number(paquete.precio || 0).toFixed(2)}
+                    <option value="${paquete.id_paquete}" data-nombre="${escapeAttr(paquete.nombre || "Paquete")}" data-precio="${precio}">
+                        ${paquete.nombre || "Paquete"} - $${precio.toFixed(2)}
                     </option>
                 `;
             });
@@ -59,33 +80,38 @@ function cargarEventosFotografo() {
 if (contratar) {
     contratar.addEventListener("submit", function(event) {
         event.preventDefault();
+        if (!clienteId) return;
+        if (!this.reportValidity()) return;
+
         const formData = new FormData(this);
         const data = Object.fromEntries(formData.entries());
+        const paquete = selectedOptionData(paqueteSelect);
+        const eventoSeleccionado = selectedOptionData(eventoSelect);
 
-        data.id_cliente = clienteId;
-        data.id_paquete = data.id_paquete || null;
-        data.id_evento = data.id_evento || null;
+        const compraPendiente = {
+            ...data,
+            id_cliente: clienteId,
+            id_fotografo: fotografoId,
+            id_paquete: data.id_paquete,
+            id_evento: data.id_evento,
+            paquete_nombre: paquete.nombre || paquete.text.replace(/\s-\s\$.*$/, "") || "Paquete",
+            paquete_precio: paquete.precio || "0",
+            evento_nombre: eventoSeleccionado.text || "Evento"
+        };
 
-        fetch(apiUrl("/compra"), {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-        })
-        .then(async res => {
-            const json = await res.json().catch(() => ({}));
-            if (!res.ok) throw json;
-            return json;
-        })
-        .then(d => {
-            alert(d.message || "Compra realizada");
-            window.location.href = "home_client.html";
-        })
-        .catch(err => {
-            console.error(err);
-            alert(err && err.message ? err.message : "Error al contratar");
+        sessionStorage.setItem(compraPendienteKey, JSON.stringify(compraPendiente));
+
+        const query = new URLSearchParams({
+            fotografo: fotografoId,
+            evento: data.id_evento,
+            paquete: data.id_paquete
         });
+
+        window.location.href = `simular_pago.html?${query.toString()}`;
     });
 }
 
-cargarPaquetes();
-cargarEventosFotografo();
+if (clienteId) {
+    cargarPaquetes();
+    cargarEventosFotografo();
+}

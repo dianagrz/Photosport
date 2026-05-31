@@ -68,6 +68,13 @@ CREATE TABLE IF NOT EXISTS compra (
     id_evento INT,
     fecha DATE,
     entregado BOOLEAN DEFAULT FALSE,
+    atleta VARCHAR(200),
+    edad INT,
+    categoria VARCHAR(100),
+    rama VARCHAR(50),
+    equipo VARCHAR(150),
+    pruebas VARCHAR(500),
+    metodo_pago VARCHAR(100),
     FOREIGN KEY (id_paquete) REFERENCES paquete_fotografico(id_paquete) ON DELETE SET NULL,
     FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente) ON DELETE SET NULL,
     FOREIGN KEY (id_evento) REFERENCES evento(id_evento) ON DELETE SET NULL

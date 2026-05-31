@@ -4,7 +4,7 @@ const eventos = document.getElementById("eventos-cubiertos");
 const grafica = document.getElementById('graficaIngresos');
 const graficaCtx = grafica ? grafica.getContext('2d') : null;
 const ingresoCompe = document.getElementById("tabla-eventos");
-const photographerId = localStorage.getItem('fotografoId') || '1';
+const photographerId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId() : localStorage.getItem('fotografoId');
 
 function safeNumber(value) {
     return Number(value || 0);
@@ -30,9 +30,9 @@ function fetchStat(url) {
 
 function cambiar_valores() {
     if (!photographerId) {
-        eventos.textContent = 0;
-        clientes.textContent = 0;
-        ingreso.textContent = "$0.00";
+        if (eventos) eventos.textContent = 0;
+        if (clientes) clientes.textContent = 0;
+        if (ingreso) ingreso.textContent = "$0.00";
         return;
     }
 
@@ -42,9 +42,9 @@ function cambiar_valores() {
         fetchStat(`/fotografo/${photographerId}/eventos_cubiertos`)
     ])
     .then(([ingresosData, clientesData, eventosData]) => {
-        ingreso.textContent = "$" + safeNumber(ingresosData.total).toFixed(2);
-        clientes.textContent = safeNumber(clientesData.total);
-        eventos.textContent = safeNumber(eventosData.total);
+        if (ingreso) ingreso.textContent = "$" + safeNumber(ingresosData.total).toFixed(2);
+        if (clientes) clientes.textContent = safeNumber(clientesData.total);
+        if (eventos) eventos.textContent = safeNumber(eventosData.total);
     })
     .catch(err => {
         console.error('Error cargando estadísticas:', err);
@@ -88,7 +88,7 @@ function tabla() {
 }
 
 function fcompe() {
-    if (!photographerId) return;
+    if (!photographerId || !ingresoCompe) return;
     ingresoCompe.innerHTML = "";
 
     fetchJson(`/fotografo/${photographerId}/ingresos_por_evento`)
@@ -114,6 +114,8 @@ function fcompe() {
     });
 }
 
-cambiar_valores();
-tabla();
-fcompe();
+if (photographerId) {
+    cambiar_valores();
+    tabla();
+    fcompe();
+}

@@ -56,22 +56,22 @@
 
                 <div class="summary-item">
 
-                    <span>Paquete Premium</span>
-                    <strong>$800 MXN</strong>
+                    <span id="summary-paquete">Paquete</span>
+                    <strong id="summary-paquete-precio">$0.00 MXN</strong>
 
                 </div>
 
                 <div class="summary-item">
 
-                    <span>Entrega Digital</span>
-                    <strong>Incluida</strong>
+                    <span id="summary-evento">Evento</span>
+                    <strong id="summary-fotografo">Fotografo</strong>
 
                 </div>
 
                 <div class="summary-item total">
 
                     <span>Total</span>
-                    <strong>$800 MXN</strong>
+                    <strong id="summary-total">$0.00 MXN</strong>
 
                 </div>
 
@@ -126,7 +126,7 @@
             </div>
 
             <!-- FORM -->
-            <form class="payment-form">
+            <form class="payment-form" id="payment-form">
 
                 <h2>
                     Información de Pago
@@ -144,7 +144,8 @@
                         <i class="fa-solid fa-user"></i>
 
                         <input type="text"
-                            placeholder="Nombre completo">
+                            placeholder="Nombre completo"
+                            required>
 
                     </div>
 
@@ -162,7 +163,8 @@
                         <i class="fa-solid fa-credit-card"></i>
 
                         <input type="text"
-                            placeholder="1234 5678 9012 3456">
+                            placeholder="1234 5678 9012 3456"
+                            required>
 
                     </div>
 
@@ -183,7 +185,8 @@
                             <i class="fa-solid fa-calendar"></i>
 
                             <input type="text"
-                                placeholder="MM/YY">
+                                placeholder="MM/YY"
+                                required>
 
                         </div>
 
@@ -201,7 +204,8 @@
                             <i class="fa-solid fa-lock"></i>
 
                             <input type="password"
-                                placeholder="123">
+                                placeholder="123"
+                                required>
 
                         </div>
 
@@ -212,16 +216,16 @@
                 <!-- BOTONES -->
                 <div class="payment-actions">
 
-                    <button type="button" class="btn-secondary">
+                    <button type="button" class="btn-secondary" id="cancel-payment">
 
                         Cancelar
 
                     </button>
 
-                    <button type="submit" class="btn-primary" href="contratar.html">
+                    <button type="submit" class="btn-primary">
 
                         <i class="fa-solid fa-lock"></i>
-                        Pagar Ahora
+                        Confirmar pago
 
                     </button>
 
@@ -235,5 +239,6 @@
 
 </body>
 
-<script src="../../Assets/JS/page-binding.js"></script>
+<script src="../../Assets/JS/page-binding.js?v=12"></script>
+<script src="../../Assets/JS/ClientJS/pago.js?v=2"></script>
 </html>
