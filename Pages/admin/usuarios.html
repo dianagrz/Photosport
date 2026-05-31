@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuarios | PhotoSport</title>
+
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+
+                <li>
+                    <a href="home_admin.html">
+                        <i class="fa-solid fa-house-user"></i>
+                        Panel principal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-eventos.html">
+                        <i class="fa-solid fa-calendar"></i>
+                        Gestión de eventos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="usuarios.html" class="active">
+                        <i class="fa-solid fa-users"></i>
+                        Usuarios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="estadisticas.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Estadísticas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Cerrar sesión
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+
+            <!-- HEADER -->
+            <section class="page-header">
+
+                <div>
+
+                    <h1>Administración de Usuarios</h1>
+
+                    <p>
+                        Gestiona fotógrafos, clientes y administradores del sistema.
+                    </p>
+
+                </div>
+
+                <a href="add-usuario.html" class="btn-primary">
+
+                    <i class="fa-solid fa-user-plus"></i>
+                    Nuevo Usuario
+
+                </a>
+
+            </section>
+
+            <!-- ESTADÍSTICAS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Total Usuarios</h3>
+                        <p>1,245</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Fotógrafos</h3>
+                        <p>85</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Clientes</h3>
+                        <p>1,130</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Administradores</h3>
+                        <p>5</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FILTROS -->
+            <section class="filters-section">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                        placeholder="Buscar usuario...">
+
+                </div>
+
+                <select class="filter-select">
+
+                    <option>Todos los roles</option>
+                    <option>Administrador</option>
+                    <option>Fotógrafo</option>
+                    <option>Cliente</option>
+
+                </select>
+
+            </section>
+
+            <!-- TABLA -->
+            <section class="table-container">
+
+                <table class="event-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- USUARIO 1 -->
+                        <tr>
+
+                            <td>#001</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Dahlia Jiménez</h4>
+                                        <p>Fotografía deportiva</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>dahlia@email.com</td>
+
+                            <td>
+
+                                <span class="role photographer">
+                                    Fotógrafo
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status active">
+                                    Activo
+                                </span>
+
+                            </td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- USUARIO 2 -->
+                        <tr>
+
+                            <td>#002</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Carlos Ramírez</h4>
+                                        <p>Cliente registrado</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>carlos@email.com</td>
+
+                            <td>
+
+                                <span class="role client">
+                                    Cliente
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status active">
+                                    Activo
+                                </span>
+
+                            </td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- USUARIO 3 -->
+                        <tr>
+
+                            <td>#003</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-user-shield"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Administrador</h4>
+                                        <p>Control del sistema</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>admin@photosport.com</td>
+
+                            <td>
+
+                                <span class="role admin">
+                                    Admin
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="status active">
+                                    Activo
+                                </span>
+
+                            </td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

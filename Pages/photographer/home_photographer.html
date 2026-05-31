@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Fotógrafo</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="photographer-theme">
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+                <li><a href="home_photographer.html"><i class="fa-solid fa-house-user"></i> Control de estudio</a></li>
+                <li><a href="mis-eventos.html"><i class="fa-solid fa-calendar"></i> Eventos</a></li>
+                <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+                <li><a href="preview-portafolio.html"><i class="fa-solid fa-camera"></i> Mi Portafolio</a></li>
+                <li><a href="estadisticas.html"><i class="fa-solid fa-chart-column"></i> Mis Estadísticas</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+            <h1>Control del estudio</h1>
+            
+            <!-- TARJETAS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>Eventos Inscritos</h3>
+                    <p id="home-eventos-inscritos"></p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Clientes registrados</h3>
+                    <p id="home-clientes"></p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-image"></i>
+                    <h3>Fotos Guardadas</h3>
+                    <p id="home-fotos"></p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <h3>Ingresos a Hoy</h3>
+                    <p id="home-ingresos"></p>
+                </div>
+            </div>
+
+            <!-- ACCIONES -->
+            <br>
+            <h2>Gestión rápida</h2>
+            <div class="acciones-grid">
+
+                <a href="mis-eventos.html" class="accion">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>Eventos</h3>
+                    <p>Ver eventos y registrarse</p>
+                </a>
+
+                <a href="paquetes.html" class="accion">
+                    <i class="fa-solid fa-box"></i>
+                    <h3>Mis Paquetes</h3>
+                    <p>Crear o editar paquetes</p>
+                </a>
+
+                <a href="preview-portafolio.html" class="accion">
+                    <i class="fa-solid fa-camera"></i>
+                    <h3>Mi Portafolio</h3>
+                    <p>Editar fotos y perfil</p>
+                </a>
+
+                <a href="estadisticas.html" class="accion">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h3>Mis Estadísticas</h3>
+                    <p>Registro de Ventas e Ingresos.</p>
+                </a>
+            </div>
+            
+        </main>
+    </div>
+</body>
+
+<script src="../../Assets/JS/page-binding.js?v=2"></script>
+<script src="../../Assets/JS/PhotographerJS/photo_home.js?v=2"></script>
+</html>

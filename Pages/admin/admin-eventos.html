@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Eventos | PhotoSport</title>
+
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+
+                <li>
+                    <a href="home_admin.html">
+                        <i class="fa-solid fa-house-user"></i>
+                        Panel principal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-eventos.html" class="active">
+                        <i class="fa-solid fa-calendar"></i>
+                        Gestión de eventos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="usuarios.html">
+                        <i class="fa-solid fa-users"></i>
+                        Usuarios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="estadisticas.html">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Estadísticas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Cerrar sesión
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+
+            <!-- HEADER -->
+            <section class="page-header">
+
+                <div>
+
+                    <h1>Gestión de Eventos</h1>
+
+                    <p>
+                        Administra, edita y controla todos los eventos deportivos registrados.
+                    </p>
+
+                </div>
+
+                <a href="add-evento.html" class="btn-primary">
+
+                    <i class="fa-solid fa-plus"></i>
+                    Nuevo Evento
+
+                </a>
+
+            </section>
+
+            <!-- TARJETAS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Eventos Activos</h3>
+                        <p>18</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Próximos Eventos</h3>
+                        <p>7</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Fotógrafos Asignados</h3>
+                        <p>25</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Galerías Generadas</h3>
+                        <p>52</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FILTROS -->
+            <section class="filters-section">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text"
+                        placeholder="Buscar evento...">
+
+                </div>
+
+                <select class="filter-select">
+
+                    <option>Todos los estados</option>
+                    <option>Activo</option>
+                    <option>Pendiente</option>
+                    <option>Finalizado</option>
+
+                </select>
+
+            </section>
+
+            <!-- TABLA -->
+            <section class="table-container">
+
+                <table class="event-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+                            <th>Evento</th>
+                            <th>Ubicación</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>Fotógrafos</th>
+                            <th>Acciones</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#001</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Regional de Natación</h4>
+                                        <p>Competencia Nacional</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Monterrey</td>
+
+                            <td>15/06/2026</td>
+
+                            <td>
+                                <span class="status active">
+                                    Activo
+                                </span>
+                            </td>
+
+                            <td>5</td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#002</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Copa Universitaria</h4>
+                                        <p>Evento Universitario</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>Puebla</td>
+
+                            <td>28/07/2026</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pendiente
+                                </span>
+                            </td>
+
+                            <td>3</td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#003</td>
+
+                            <td>
+
+                                <div class="event-info">
+
+                                    <div class="event-image">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </div>
+
+                                    <div>
+
+                                        <h4>Campeonato Estatal</h4>
+                                        <p>Torneo Regional</p>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+                            <td>CDMX</td>
+
+                            <td>05/08/2026</td>
+
+                            <td>
+                                <span class="status inactive">
+                                    Finalizado
+                                </span>
+                            </td>
+
+                            <td>8</td>
+
+                            <td class="acciones">
+
+                                <button class="btn-view">
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                                <button class="btn-edit">
+                                    <i class="fa-solid fa-pen"></i>
+                                </button>
+
+                                <button class="btn-delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

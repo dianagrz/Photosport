@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Pago | PhotoSport</title>
+
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="client-theme">
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <h2>PhotoSport</h2>
+
+        <nav>
+
+            <a href="home_client.html">Inicio</a>
+            <a href="fotografos.html">Fotógrafos</a>
+
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="payment-page">
+
+        <!-- LEFT -->
+        <section class="payment-info">
+
+            <span class="payment-badge">
+                PAGO SEGURO
+            </span>
+
+            <h1>
+                Finaliza tu contratación 📸
+            </h1>
+
+            <p>
+                Completa la información de tu tarjeta para simular
+                el pago de la sesión fotográfica.
+            </p>
+
+            <!-- RESUMEN -->
+            <div class="payment-summary">
+
+                <h3>
+                    Resumen del pedido
+                </h3>
+
+                <div class="summary-item">
+
+                    <span>Paquete Premium</span>
+                    <strong>$800 MXN</strong>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Entrega Digital</span>
+                    <strong>Incluida</strong>
+
+                </div>
+
+                <div class="summary-item total">
+
+                    <span>Total</span>
+                    <strong>$800 MXN</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT -->
+        <section class="payment-card-container">
+
+            <!-- CARD -->
+            <div class="credit-card">
+
+                <div class="card-top">
+
+                    <span>PhotoSport</span>
+
+                    <i class="fa-solid fa-wifi"></i>
+
+                </div>
+
+                <div class="card-chip">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                </div>
+
+                <div class="card-number">
+
+                    **** **** **** 4589
+
+                </div>
+
+                <div class="card-bottom">
+
+                    <div>
+
+                        <small>Titular</small>
+                        <p>Dahlia Jiménez</p>
+
+                    </div>
+
+                    <div>
+
+                        <small>Expira</small>
+                        <p>12/28</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FORM -->
+            <form class="payment-form">
+
+                <h2>
+                    Información de Pago
+                </h2>
+
+                <!-- TITULAR -->
+                <div class="input-group">
+
+                    <label>
+                        Nombre del titular
+                    </label>
+
+                    <div class="input-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input type="text"
+                            placeholder="Nombre completo">
+
+                    </div>
+
+                </div>
+
+                <!-- TARJETA -->
+                <div class="input-group">
+
+                    <label>
+                        Número de tarjeta
+                    </label>
+
+                    <div class="input-icon">
+
+                        <i class="fa-solid fa-credit-card"></i>
+
+                        <input type="text"
+                            placeholder="1234 5678 9012 3456">
+
+                    </div>
+
+                </div>
+
+                <!-- GRID -->
+                <div class="payment-grid">
+
+                    <!-- FECHA -->
+                    <div class="input-group">
+
+                        <label>
+                            Expiración
+                        </label>
+
+                        <div class="input-icon">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                            <input type="text"
+                                placeholder="MM/YY">
+
+                        </div>
+
+                    </div>
+
+                    <!-- CVV -->
+                    <div class="input-group">
+
+                        <label>
+                            CVV
+                        </label>
+
+                        <div class="input-icon">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password"
+                                placeholder="123">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BOTONES -->
+                <div class="payment-actions">
+
+                    <button type="button" class="btn-secondary">
+
+                        Cancelar
+
+                    </button>
+
+                    <button type="submit" class="btn-primary" href="contratar.html">
+
+                        <i class="fa-solid fa-lock"></i>
+                        Pagar Ahora
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

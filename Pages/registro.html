@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="register-page">
+    <div class="registro-container">
+
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Regresar</a>
+        <h2>Crear cuenta</h2>
+
+        <form id = "registro-form">
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" required name="nombre">
+
+            <label>Apellido</label>
+            <input type="text" placeholder="Apellido" required name="apellido">
+
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="ejemplo@email.com" required name="correo">
+
+            <label>Teléfono</label>
+            <input type="tel" placeholder="Número de teléfono" name="telefono">
+
+            <label>Contraseña</label>
+            <input type="password" placeholder="********" required name="password">
+
+            <label>Tipo de usuario</label>
+
+            <select required name="tipo">
+                <option value="">Selecciona una opción</option>
+                <option value="cliente">Cliente</option>
+                <option value="fotografo">Fotógrafo</option>
+            </select>
+
+            <table class="terms" >
+                <tr style="vertical-align: sub;">
+                    <th><label>Acepto términos y condiciones</label></th>
+                    <th><input type="checkbox" required></th>
+                </tr>                
+            </table>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+<script src="../../Assets/JS/page-binding.js"></script>
+<script src="../../Assets/JS/registro.js"></script>
+</html>

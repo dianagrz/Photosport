@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paquetes</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="photographer-theme">
+    <div class="dashboard-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+                <li><a href="home_photographer.html"><i class="fa-solid fa-house-user"></i> Control de estudio</a></li>
+                <li><a href="mis-eventos.html"><i class="fa-solid fa-calendar"></i> Eventos</a></li>
+                <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+                <li><a href="preview-portafolio.html"><i class="fa-solid fa-camera"></i> Mi Portafolio</a></li>
+                <li><a href="estadisticas.html"><i class="fa-solid fa-chart-column"></i> Mis Estadísticas</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+            <h1>Paquetes</h1>
+            <button class="btn-crear" onclick="mostrarFormulario()">+ Crear paquete</button>
+
+            <!-- FORMULARIO -->
+            <div id="formulario-paquete" class="form-paquete" style="display:none;">
+                <form id="nuevo">
+                    <h2 id="titulo-form">Crear paquete</h2>
+                    <input type="text" placeholder="Nombre del paquete" required name="nombre">
+                    <input type="number" placeholder="Precio" required name="precio">
+                    <input type="text" placeholder="Cobertura" required name="cobertura">
+                    <input type="text" placeholder="Descripción breve del paquete" required name="descrip">
+                    <button type="submit">Guardar</button>
+                </form>
+                <button onclick="ocultarFormulario()">Cancelar</button>
+            </div>
+
+            <!-- LISTA DE PAQUETES -->
+            <div id="lista-paquetes" class="paquetes-grid">
+                <div class="paquete-card" data-id="1">
+                    <h3>Paquete 1</h3>
+                    <p><b>Precio:</b> 600</p>
+                    <p><b>Cobertura:</b> 1 a 2 pruebas</p>
+                    <p>10 fotos editadas profesionalmente</p>
+                    <button data-accion="editar">Editar</button>
+                    <button data-accion="eliminar">Eliminar</button>
+                </div>
+                <div class="paquete-card" data-id="2">
+                    <h3>Paquete 1</h3>
+                    <p><b>Precio:</b>600</p>
+                    <p><b>Cobertura:</b> 1 a 2 pruebas</p>
+                    <p>10 fotos editadas profesionalmente</p>
+                    <button data-accion="editar">Editar</button>
+                    <button data-accion="eliminar">Eliminar</button>
+                </div>
+                <div class="paquete-card" data-id="3">
+                    <h3>Paquete 1</h3>
+                    <p><b>Precio:</b>600</p>
+                    <p><b>Cobertura:</b> 1 a 2 pruebas</p>
+                    <p>10 fotos editadas profesionalmente</p>
+                    <button data-accion="editar">Editar</button>
+                    <button data-accion="eliminar">Eliminar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+<script src="../../Assets/JS/PhotographerJS/paquetes.js"></script>
+</html>

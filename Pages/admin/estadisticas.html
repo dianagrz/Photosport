@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estadísticas | PhotoSport</title>
+
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+
+                <li>
+                    <a href="home_admin.html">
+                        <i class="fa-solid fa-house-user"></i>
+                        Panel principal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-eventos.html">
+                        <i class="fa-solid fa-calendar"></i>
+                        Gestión de eventos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="usuarios.html">
+                        <i class="fa-solid fa-users"></i>
+                        Usuarios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="estadisticas.html" class="active">
+                        <i class="fa-solid fa-chart-column"></i>
+                        Estadísticas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Cerrar sesión
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+
+            <!-- HEADER -->
+            <section class="page-header">
+
+                <div>
+
+                    <h1>Estadísticas Generales</h1>
+
+                    <p>
+                        Consulta el rendimiento, ingresos y actividad de la plataforma.
+                    </p>
+
+                </div>
+
+                <button class="btn-primary">
+
+                    <i class="fa-solid fa-download"></i>
+                    Descargar Reporte
+
+                </button>
+
+            </section>
+
+            <!-- TARJETAS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="card-icon blue">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Ingresos Totales</h3>
+                        <p>$245,000</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon green">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Usuarios Activos</h3>
+                        <p>1,245</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon orange">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Eventos Realizados</h3>
+                        <p>52</p>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="card-icon purple">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Fotos Vendidas</h3>
+                        <p>18,920</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PANEL DE GRÁFICAS -->
+            <section class="charts-grid">
+
+
+            </section>
+
+            
+
+        </main>
+
+    </div>
+
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

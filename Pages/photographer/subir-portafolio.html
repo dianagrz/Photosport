@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subir portafolio</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+</head>
+
+<body class="photographer-theme">
+    <header class="dashboard-header">
+        <h2>PhotoSport</h2>
+    </header>
+
+    <section class="subir-portafolio">
+        <h1>Sube tu portafolio</h1>
+        <p>Agrega algunas fotos que representen tu trabajo.</p>
+        
+        <form action="../../Pages/photographer/preview-portafolio.html">
+            <label>Seleccionar fotografías</label>
+            <input type="file" multiple accept="image/*">
+
+            <div class="preview-container">
+                <img src="../../Assets/IMG/foto1.jpg">
+                <img src="../../Assets/IMG/foto2.jpg">
+                <img src="../../Assets/IMG/foto3.jpg">
+            </div>
+
+            <button type="submit">Previsualizar portafolio</button>
+        </form>
+
+    </section>
+</body>
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

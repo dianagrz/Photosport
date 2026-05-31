@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscribir Eventos</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="photographer-theme">
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+                <li><a href="home_photographer.html"><i class="fa-solid fa-house-user"></i> Control de estudio</a></li>
+                <li><a href="mis-eventos.html"><i class="fa-solid fa-calendar"></i> Eventos</a></li>
+                <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+                <li><a href="preview-portafolio.html"><i class="fa-solid fa-camera"></i> Mi Portafolio</a></li>
+                <li><a href="estadisticas.html"><i class="fa-solid fa-chart-column"></i> Mis Estadísticas</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="dashboard-main">
+            <div class="head">
+                <a href="mis-eventos.html" class="btn-inscribir"><i class="fa-solid fa-arrow-left"></i></a>
+                <h1>Eventos</h1>
+            </div>
+            <p>Encuentra eventos disponibles o solicita uno nuevo.</p>
+
+            <!-- EVENTOS EXISTENTES -->
+            <div class="eventos-existentes">
+                <h2>Eventos disponibles</h2>
+                <div class="head">
+                    <input id="busqueda" type="text" placeholder="Buscar evento" style="width: 45%;">
+                    <button class="btn-inscribir" onclick="buscar()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="eventos-lista" id="eventos">
+                    <div class="evento-card" data-id="1"> <!-- Una vez se tenga BD, eliminar el div completo-->
+                        <h3>Campeonato Estatal de Natación</h3>
+                        <p>📅 12 marzo 2026</p>
+                        <p>📍 Aguascalientes</p>
+                        <button data-accion="inscribir">Registrarme como fotógrafo</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="eventos-container" style="width: 93%;">
+
+                <!-- SOLICITAR EVENTO -->
+                <div class="solicitar-evento">
+                    <h2>Solicitar nuevo evento</h2>
+                    <p>Si el evento no se encutra llena el siguiente formulario con toda la información solicitada..</p>
+
+                    <form id="solicitar">
+                        <label>Nombre del evento</label>
+                        <input type="text" required name="nombre">
+
+                        <label>Deporte</label>
+                        <select required name="deporte">
+                            <option value="">Selecciona una opción</option>
+                            <option value="Natación">Natación</option>
+                            <option value="Atletismo">Atletismo</option>
+                            <option value="Triatlon">Triatlón</option>
+                        </select>
+
+                        <label>Fecha de Inicio del Evento</label>
+                        <input type="date" required name="fromFecha">
+
+                        <label>Fecha de Finalización del Evento</label>
+                        <input type="date" required name="toFecha">
+
+                        <label>Lugar</label>
+                        <input type="text" required name="lugar">
+
+                        <label>Organizador</label>
+                        <input type="text" required name="organizador">
+
+                        <button type="submit">Enviar solicitud</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="../../Assets/JS/page-binding.js?v=6"></script>
+<script src="../../Assets/JS/PhotographerJS/inscribir_evento.js?v=6"></script>
+</html>

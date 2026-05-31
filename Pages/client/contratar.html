@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contratar sesion</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+</head>
+
+<body class="client-theme">
+    <header class="dashboard-header">
+        <h2>PhotoSport</h2>
+        <nav>
+            <a href="home_client.html">Inicio</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="fotografos.html">Fotografos</a>
+        </nav>
+    </header>
+
+    <section class="contratar-page">
+        <form class="form-contratar" id="contratar">
+            <h1>Contratar sesion fotografica</h1>
+            <h3>Datos del atleta</h3>
+
+            <label>Nombre del atleta</label>
+            <input type="text" name="atleta" required>
+
+            <label>Edad</label>
+            <input type="number" name="edad" required>
+
+            <label>Categoria</label>
+            <input type="text" name="categoria" placeholder="Ej. 13-14, 15-17">
+
+            <label>Rama</label>
+            <select name="rama">
+                <option value="">Selecciona una opcion</option>
+                <option value="femenil">Femenil</option>
+                <option value="varonil">Varonil</option>
+            </select>
+
+            <label>Equipo</label>
+            <input type="text" name="equipo">
+
+            <label>Pruebas que nada</label>
+            <input type="text" name="pruebas" placeholder="Ej. 100 libre, 200 mariposa">
+
+            <h3>Paquete fotografico</h3>
+            <select required name="id_paquete" id="paquete">
+                <option value="">Selecciona un paquete</option>
+            </select>
+
+            <h3>Evento</h3>
+            <select required name="id_evento" id="evento">
+                <option value="">Selecciona un evento</option>
+            </select>
+
+            <h3>Simulacion de pago</h3>
+            <select name="metodo_pago">
+                <option value="">Selecciona un metodo de pago</option>
+                <option value="tarjeta de credito">Tarjeta de credito</option>
+                <option value="tarjeta de debito">Tarjeta de debito</option>
+            </select>
+
+            <a href="simular_pago.html">
+                <button class="btn-simular" type="button">Simular pago</button>
+            </a>
+
+            <button type="submit">Confirmar contratacion</button>
+        </form>
+    </section>
+</body>
+<script src="../../Assets/JS/page-binding.js?v=10"></script>
+<script src="../../Assets/JS/ClientJS/contratar.js?v=10"></script>
+</html>

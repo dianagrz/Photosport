@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+
+    <link rel="stylesheet" href="../Assets/CSS/style.css">
+</head>
+
+<body class="login-page">
+    <div class="login-container">
+        <h2>Iniciar sesión</h2>
+
+        <form id="logSession">
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="ejemplo@email.com" name="email" required>
+            
+            <label>Contraseña</label>
+            <input type="password" placeholder="********" name="password" required>
+            
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <p>
+            ¿No tienes cuenta?
+            <a href="registro.html">Crear cuenta</a>
+        </p>
+
+    </div>
+</body>
+
+<script src="../Assets/JS/page-binding.js"></script>
+<script src="../Assets/JS/mainLogin.js"></script>
+</html>

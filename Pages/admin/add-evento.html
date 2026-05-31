@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Evento | PhotoSport</title>
+
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo-area">
+
+                <h2>📷 PhotoSport</h2>
+
+                <span>
+                    ADMIN PANEL
+                </span>
+
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="home_admin.html">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin-eventos.html" class="active">
+                        <i class="fa-solid fa-calendar"></i>
+                        Eventos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="usuarios.html">
+                        <i class="fa-solid fa-users"></i>
+                        Usuarios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="estadisticas.html">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        Estadísticas
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Salir
+                    </a>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="dashboard-main">
+
+            <!-- HERO -->
+            <section class="premium-hero">
+
+                <div class="hero-left">
+
+                    <span class="premium-badge">
+                        NUEVO EVENTO
+                    </span>
+
+                    <h1>
+                        Crea eventos deportivos increíbles 🏆
+                    </h1>
+
+                    <p>
+                        Organiza competencias, asigna fotógrafos y administra
+                        toda la cobertura profesional desde un solo panel.
+                    </p>
+
+                    <div class="hero-stats">
+
+                        <div class="mini-stat">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            <div>
+
+                                <strong>52</strong>
+                                <span>Eventos</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mini-stat">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                            <div>
+
+                                <strong>85</strong>
+                                <span>Fotógrafos</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+
+                    <div class="hero-circle">
+
+                        <i class="fa-solid fa-medal"></i>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FORM -->
+            <section class="glass-form-container">
+
+                <!-- TOP -->
+                <div class="glass-header">
+
+                    <div>
+
+                        <h2>
+                            Información del Evento
+                        </h2>
+
+                        <p>
+                            Completa todos los detalles para publicar el evento.
+                        </p>
+
+                    </div>
+
+                    <a href="admin-eventos.html" class="modern-back-btn">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </a>
+
+                </div>
+
+                <form class="premium-form">
+
+                    <!-- GRID -->
+                    <div class="premium-grid">
+
+                        <!-- EVENTO -->
+                        <div class="floating-input">
+
+                            <label>
+                                Nombre del Evento
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-trophy"></i>
+
+                                <input type="text"
+                                    placeholder="Regional de Natación">
+
+                            </div>
+
+                        </div>
+
+                        <!-- CATEGORÍA -->
+                        <div class="floating-input">
+
+                            <label>
+                                Categoría
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                                <select>
+
+                                    <option>Seleccionar</option>
+                                    <option>Natación</option>
+                                    <option>Atletismo</option>
+                                    <option>Fútbol</option>
+                                    <option>Básquetbol</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- UBICACIÓN -->
+                        <div class="floating-input">
+
+                            <label>
+                                Ubicación
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <input type="text"
+                                    placeholder="Ciudad o sede">
+
+                            </div>
+
+                        </div>
+
+                        <!-- FECHA -->
+                        <div class="floating-input">
+
+                            <label>
+                                Fecha
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-calendar-days"></i>
+
+                                <input type="date">
+
+                            </div>
+
+                        </div>
+
+                        <!-- HORA -->
+                        <div class="floating-input">
+
+                            <label>
+                                Hora
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-clock"></i>
+
+                                <input type="time">
+
+                            </div>
+
+                        </div>
+
+                        <!-- ESTADO -->
+                        <div class="floating-input">
+
+                            <label>
+                                Estado
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-signal"></i>
+
+                                <select>
+
+                                    <option>Activo</option>
+                                    <option>Pendiente</option>
+                                    <option>Finalizado</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- DESCRIPCIÓN -->
+                    <div class="floating-input full">
+
+                        <label>
+                            Descripción
+                        </label>
+
+                        <textarea rows="6"
+                            placeholder="Describe el evento, horarios, competencias y detalles importantes..."></textarea>
+
+                    </div>
+
+                    <!-- UPLOAD -->
+                    <div class="premium-upload">
+
+                        <div class="upload-overlay">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <h3>
+                                Subir portada del evento
+                            </h3>
+
+                            <p>
+                                JPG, PNG o WEBP
+                            </p>
+
+                            <button type="button" class="upload-btn">
+
+                                Seleccionar archivo
+
+                            </button>
+
+                            <input type="file">
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARDS -->
+                    <div class="tips-grid">
+
+                        <div class="tip-card">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                            <div>
+
+                                <h4>
+                                    Consejo
+                                </h4>
+
+                                <p>
+                                    Usa títulos cortos y llamativos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tip-card">
+
+                            <i class="fa-solid fa-image"></i>
+
+                            <div>
+
+                                <h4>
+                                    Imagen
+                                </h4>
+
+                                <p>
+                                    Recomendado 1920x1080 px.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="tip-card">
+
+                            <i class="fa-solid fa-user-group"></i>
+
+                            <div>
+
+                                <h4>
+                                    Cobertura
+                                </h4>
+
+                                <p>
+                                    Asigna fotógrafos especializados.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div class="premium-actions">
+
+                        <button type="submit" class="save-btn">
+
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            Publicar Evento
+
+                        </button>
+
+                        <button type="reset" class="clear-btn">
+
+                            <i class="fa-solid fa-rotate-left"></i>
+                            Reiniciar
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+<script src="../../Assets/JS/page-binding.js"></script>
+</html>

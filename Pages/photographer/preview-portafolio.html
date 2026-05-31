@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" href="../../Assets/CSS/style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="photographer-theme">
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>📷 PhotoSport</h2>
+
+            <ul>
+                <li><a href="home_photographer.html"><i class="fa-solid fa-house-user"></i> Control de estudio</a></li>
+                <li><a href="mis-eventos.html"><i class="fa-solid fa-calendar"></i> Eventos</a></li>
+                <li><a href="paquetes.html"><i class="fa-solid fa-box"></i> Paquetes</a></li>
+                <li><a href="preview-portafolio.html"><i class="fa-solid fa-camera"></i> Mi Portafolio</a></li>
+                <li><a href="estadisticas.html"><i class="fa-solid fa-chart-column"></i> Mis Estadísticas</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</a></li>
+            </ul>
+        </aside>
+
+
+        <!-- CONTENIDO -->
+
+        <main class="dashboard-main">
+            <h1>Mi portafolio</h1>
+
+            <div class="perfil-portafolio">
+                <div id="perfil" class="perfil-portafolio">
+                    <img id="fotoPerfil" src="img/fotografo.jpg" class="foto-perfil" alt="img">
+                    <h2 id="nombrePerfil">Nombre del fotógrafo</h2>
+                    <p id="descPerfil">Descripción...</p>
+                </div>
+                
+                <div class="botones-editar">
+                    <a href="crear-perfil.html">
+                        <button>Editar perfil</button>
+                    </a>
+                    <a href="editar-portafolio.html">
+                        <button>Editar portafolio</button>
+                    </a>
+                </div>
+            </div>
+
+            <h2>Galería</h2>
+            <div id="imagenes" class="galeria-portafolio">
+                <img src="img/foto1.jpg">
+            </div>
+        </main>
+
+    </div>
+    
+</body>
+<script src="../../Assets/JS/page-binding.js?v=8"></script>
+<script src="../../Assets/JS/PhotographerJS/portafolio.js?v=8"></script>
+</html>
