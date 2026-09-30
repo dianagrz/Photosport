@@ -28,7 +28,7 @@ PhotoSport lets photographers sign up to cover events, publish photo packages an
 | Database   | MySQL (via `mysql2`), stored procedures & functions |
 | Storage    | Local filesystem (`/Uploads`) served as static files |
 
-I chose not to use a front-end framework so I could practice DOM manipulation, asynchronous `fetch` calls, and client-side state (`localStorage` / `sessionStorage`) directly.
+We chose not to use a front-end framework so we could practice DOM manipulation, asynchronous `fetch` calls, and client-side state (`localStorage` / `sessionStorage`) directly.
 
 ---
 
@@ -176,7 +176,7 @@ A sample of the endpoints exposed by the server:
 
 ---
 
-## 💡 What I Learned
+## 💡 What We Learned
 
 - Designing a relational schema from real-world requirements, and choosing between `ON DELETE CASCADE` and `SET NULL` so that historical purchases are kept when related records are deleted.
 - Moving aggregation and reporting into **stored procedures and functions**, which keeps the API layer thin.
@@ -186,7 +186,7 @@ A sample of the endpoints exposed by the server:
 
 ## 🔭 Future Improvements
 
-These are next steps I've identified to make the project production-ready:
+These are next steps we've identified to make the project production-ready:
 
 - **Security**: hash passwords (e.g. bcrypt) and replace `localStorage` IDs with server-verified sessions or JWTs, with authorization checks on every endpoint.
 - **Configuration**: move database credentials into environment variables (`.env`).
@@ -199,4 +199,6 @@ These are next steps I've identified to make the project production-ready:
 
 ## 👩‍💻 Author
 
-**Diana** ([@dianagrz](https://github.com/dianagrz))
+**Diana Garza** ([@dianagrz](https://github.com/dianagrz))
+**Dahlia Jimenez**  ([@dahlia-ji](https://github.com/dahlia-ji))
+**Luis Fernando Rivera** ([@01Ferdinand10](https://github.com/01Ferdinand10))
