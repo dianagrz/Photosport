@@ -4,6 +4,17 @@
 
 PhotoSport lets photographers sign up to cover events, publish photo packages and a portfolio, and deliver photos to their clients. Clients (athletes, parents, teams) can browse upcoming events, find photographers covering them, buy a package, and download their photos from a personal gallery once they're delivered.
 
+### 🌐 [Live demo → dianagrz.github.io/Photosport](https://dianagrz.github.io/Photosport/)
+
+Try it without installing anything. On the login page, pick **Entrar como Cliente** or **Entrar como Fotógrafo**:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Client | `lorena.tovar24@mail.com` | `cliente24123` |
+| Photographer | `fotografo5@photosport.com` | `foto5secure` |
+
+The live demo runs entirely in the browser. See [Local version vs. live demo](#-local-version-vs-live-demo) for how it works.
+
 > The user interface is written in Spanish, since the project was built for a Spanish-speaking audience. This README and the notes below explain the code in English.
 
 ---
@@ -55,7 +66,7 @@ I chose not to use a front-end framework so I could practice DOM manipulation, a
 ### 🛡 Administrator
 - Dashboard, event management, user management and statistics screens
 - Backend endpoints for creating events and accepting event requests (`/eventos`, `/solicitud_evento`)
-- *The admin screens are currently UI prototypes and aren't connected to the API yet.*
+- *The admin screens are currently UI prototypes and aren't connected to the API yet. The live demo links to them from the login page.*
 
 ---
 
@@ -97,18 +108,43 @@ Reporting logic lives in the database rather than in JavaScript, for example:
 
 ---
 
+## 🧪 Local version vs. live demo
+
+GitHub Pages can only host static files, so it can't run the Express server or the MySQL database. For the live demo, a small **in-browser mock backend** (`Assets/JS/demo/mock-api.js`) stands in for them.
+
+| | Local version | Live demo (GitHub Pages) |
+|---|---|---|
+| Backend | Express REST API (`conexion.js`) | `mock-api.js` intercepts `fetch()` calls to the API and answers them in the browser |
+| Database | MySQL with stored procedures & functions | Seed data in `seed-data.json`, generated from `Database/photosportData.sql`; the procedures' logic is reimplemented in JS |
+| Persistence | Shared database | Each visitor's own `localStorage`; **Reiniciar demo** restores the original data |
+| Photo uploads | Saved to `/Uploads` with Multer | Resized in the browser and stored as `data:` URLs |
+| Payments | Simulated | Simulated |
+
+**How it switches:** `mock-api.js` is the first script on every page. It only turns on when the site is served from `*.github.io` or opened with `?demo=1`; otherwise it returns immediately and the pages talk to the real API. Because the page code is **exactly the same in both modes**, the mock returns the same JSON shapes as each Express route.
+
+**Why it lives on `main` and not in a separate `deployed` branch:** the demo's *features* differ from the local version (no shared database), but its *code* doesn't. Every page and page script is shared, and the demo is one isolated layer that is off by default. A separate branch would copy ~50 files that are otherwise identical, and it would fall behind every time `main` changed. With one branch, every push to `main` redeploys the demo automatically through GitHub Actions (`.github/workflows/pages.yml`).
+
+Demo-only extras, all added by `scripts/build-demo-seed.js` and none written to the SQL files:
+- sport names, photographer bios and profile pictures
+- purchase dates, so the revenue charts have data
+- placeholder portfolio and delivered photos (`Assets/IMG/demo/`)
+- a date shift, so the next event is always a few weeks away
+
+---
+
 ## 📁 Project Structure
 
 ```
 Photosport/
 ├── Assets/
 │   ├── CSS/style.css              # Shared styles / dashboard layout
-│   ├── IMG/                       # Static images
+│   ├── IMG/                       # Static images (+ demo/ placeholders)
 │   └── JS/
 │       ├── conexion.js            # Express server + REST API
 │       ├── page-binding.js        # API base URL, route guards, session helpers
 │       ├── mainLogin.js           # Login logic
 │       ├── registro.js            # Sign-up logic
+│       ├── demo/                  # Live-demo layer (mock API + seed data)
 │       ├── ClientJS/              # Client page scripts
 │       └── PhotographerJS/        # Photographer page scripts
 ├── Database/
@@ -120,6 +156,9 @@ Photosport/
 │   ├── client/                    # Client views
 │   ├── photographer/              # Photographer views
 │   └── admin/                     # Admin views (UI prototypes)
+├── scripts/build-demo-seed.js     # Converts the SQL seed into demo JSON
+├── .github/workflows/pages.yml    # Deploys the live demo to GitHub Pages
+├── index.html                     # Redirects to Pages/index.html
 ├── Uploads/                       # Created at runtime for uploaded photos (git-ignored)
 └── package.json
 ```
@@ -134,8 +173,8 @@ Photosport/
 
 ### 1. Clone and install
 ```bash
-git clone https://github.com/dianagrz/photosport.git
-cd photosport
+git clone https://github.com/dianagrz/Photosport.git
+cd Photosport
 npm install
 ```
 
@@ -149,11 +188,22 @@ The connection settings are at the top of `Assets/JS/conexion.js` (`host: localh
 
 ### 3. Run the server
 ```bash
-node Assets/JS/conexion.js
+npm start            # same as: node Assets/JS/conexion.js
 ```
 
 ### 4. Open the app
-Go to **http://localhost:3000/Pages/index.html**. You can register a new client or photographer account, or log in with one from the sample data.
+Go to **http://localhost:3000**. You can register a new client or photographer account, or log in with one from the sample data.
+
+### Try the demo mode locally (no MySQL needed)
+Serve the folder with any static server and add `?demo=1` to the URL:
+```bash
+npx serve .          # or: python3 -m http.server
+# open http://localhost:3000/?demo=1  (use the port your server prints)
+```
+Add `?demo=0` to turn demo mode off again. If you change `Database/photosportData.sql`, regenerate the demo data with `npm run build:demo`. The deploy workflow also runs this step on every push.
+
+### Deploying the live demo
+The workflow in `.github/workflows/pages.yml` publishes the static site on every push to `main`. It's a one-time setup: in the repository go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
 
 ---
 
@@ -183,6 +233,7 @@ A sample of the endpoints exposed by the server:
 - Building a REST API with Express, including multipart file uploads and serving user-uploaded content.
 - Handling client-side state and role-based navigation without a framework.
 - Connecting a multi-step purchase flow across pages with `sessionStorage`.
+- Making a full-stack app deployable on static hosting: I wrote a drop-in mock layer that intercepts `fetch()` and copies the API's behavior, without changing any page code.
 
 ## 🔭 Future Improvements
 
@@ -193,7 +244,7 @@ These are next steps I've identified to make the project production-ready:
 - **Admin panel**: connect the admin screens to the API.
 - **Payments**: replace the simulated checkout with a real payment provider (e.g. Stripe).
 - **Storage**: move uploads to cloud object storage and generate thumbnails.
-- **Testing**: add automated API tests and input validation.
+- **Testing**: add automated API tests and input validation. The mock API's routes could double as a contract test for the real ones.
 
 ---
 

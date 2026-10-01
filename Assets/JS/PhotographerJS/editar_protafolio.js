@@ -41,7 +41,7 @@ const fotografoId = window.PhotoSportAuth ? window.PhotoSportAuth.getFotografoId
 
 function getImageUrl(path) {
     if (!path) return "";
-    if (String(path).startsWith("http")) return path;
+    if (/^(https?:|data:|blob:)/i.test(String(path))) return path;
     return getApiUrl(String(path).startsWith("/") ? path : `/${path}`);
 }
 

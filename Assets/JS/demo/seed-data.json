@@ -1,0 +1,2771 @@
+{
+ "cliente": [
+  {
+   "nombre": "Camila",
+   "apellido": "Ocasio",
+   "correo": "camila.ocasio1@mail.com",
+   "telefono": "1043321819",
+   "contrasena": "cliente1123",
+   "id_cliente": 1
+  },
+  {
+   "nombre": "Tomás",
+   "apellido": "Quintanilla",
+   "correo": "tomás.quintanilla2@mail.com",
+   "telefono": "6001338908",
+   "contrasena": "cliente2123",
+   "id_cliente": 2
+  },
+  {
+   "nombre": "Yolanda",
+   "apellido": "Villaseñor",
+   "correo": "yolanda.villaseñor3@mail.com",
+   "telefono": "3863794026",
+   "contrasena": "cliente3123",
+   "id_cliente": 3
+  },
+  {
+   "nombre": "Ángela",
+   "apellido": "Montes",
+   "correo": "ángela.montes4@mail.com",
+   "telefono": "5423511615",
+   "contrasena": "cliente4123",
+   "id_cliente": 4
+  },
+  {
+   "nombre": "Perla",
+   "apellido": "Nieves",
+   "correo": "perla.nieves5@mail.com",
+   "telefono": "5940781618",
+   "contrasena": "cliente5123",
+   "id_cliente": 5
+  },
+  {
+   "nombre": "Raquel",
+   "apellido": "Matos",
+   "correo": "raquel.matos6@mail.com",
+   "telefono": "4959310341",
+   "contrasena": "cliente6123",
+   "id_cliente": 6
+  },
+  {
+   "nombre": "Ilse",
+   "apellido": "Concepción",
+   "correo": "ilse.concepción7@mail.com",
+   "telefono": "3164752553",
+   "contrasena": "cliente7123",
+   "id_cliente": 7
+  },
+  {
+   "nombre": "José Eduardo",
+   "apellido": "Quiñónez",
+   "correo": "joséeduardo.quiñónez8@mail.com",
+   "telefono": "4192832764",
+   "contrasena": "cliente8123",
+   "id_cliente": 8
+  },
+  {
+   "nombre": "Leticia",
+   "apellido": "Gallardo",
+   "correo": "leticia.gallardo9@mail.com",
+   "telefono": "8350305641",
+   "contrasena": "cliente9123",
+   "id_cliente": 9
+  },
+  {
+   "nombre": "Claudio",
+   "apellido": "Dueñas",
+   "correo": "claudio.dueñas10@mail.com",
+   "telefono": "3953767242",
+   "contrasena": "cliente10123",
+   "id_cliente": 10
+  },
+  {
+   "nombre": "Daniel",
+   "apellido": "Ozuna",
+   "correo": "daniel.ozuna11@mail.com",
+   "telefono": "3884969653",
+   "contrasena": "cliente11123",
+   "id_cliente": 11
+  },
+  {
+   "nombre": "Aida",
+   "apellido": "Delgadillo",
+   "correo": "aida.delgadillo12@mail.com",
+   "telefono": "2871012269",
+   "contrasena": "cliente12123",
+   "id_cliente": 12
+  },
+  {
+   "nombre": "Elias",
+   "apellido": "Meraz",
+   "correo": "elias.meraz13@mail.com",
+   "telefono": "1669784801",
+   "contrasena": "cliente13123",
+   "id_cliente": 13
+  },
+  {
+   "nombre": "Manuel",
+   "apellido": "Navarro",
+   "correo": "manuel.navarro14@mail.com",
+   "telefono": "8451462704",
+   "contrasena": "cliente14123",
+   "id_cliente": 14
+  },
+  {
+   "nombre": "Mauricio",
+   "apellido": "Cruz",
+   "correo": "mauricio.cruz15@mail.com",
+   "telefono": "8281489325",
+   "contrasena": "cliente15123",
+   "id_cliente": 15
+  },
+  {
+   "nombre": "Reina",
+   "apellido": "Santacruz",
+   "correo": "reina.santacruz16@mail.com",
+   "telefono": "2880957015",
+   "contrasena": "cliente16123",
+   "id_cliente": 16
+  },
+  {
+   "nombre": "Jaime",
+   "apellido": "Robledo",
+   "correo": "jaime.robledo17@mail.com",
+   "telefono": "4303911718",
+   "contrasena": "cliente17123",
+   "id_cliente": 17
+  },
+  {
+   "nombre": "Oswaldo",
+   "apellido": "Amador",
+   "correo": "oswaldo.amador18@mail.com",
+   "telefono": "2278248963",
+   "contrasena": "cliente18123",
+   "id_cliente": 18
+  },
+  {
+   "nombre": "Helena",
+   "apellido": "Portillo",
+   "correo": "helena.portillo19@mail.com",
+   "telefono": "8346578713",
+   "contrasena": "cliente19123",
+   "id_cliente": 19
+  },
+  {
+   "nombre": "María Cristina",
+   "apellido": "Velasco",
+   "correo": "maríacristina.velasco20@mail.com",
+   "telefono": "3150983930",
+   "contrasena": "cliente20123",
+   "id_cliente": 20
+  },
+  {
+   "nombre": "Alejandro",
+   "apellido": "Echeverría",
+   "correo": "alejandro.echeverría21@mail.com",
+   "telefono": "1031051834",
+   "contrasena": "cliente21123",
+   "id_cliente": 21
+  },
+  {
+   "nombre": "Perla",
+   "apellido": "Leyva",
+   "correo": "perla.leyva22@mail.com",
+   "telefono": "7382997376",
+   "contrasena": "cliente22123",
+   "id_cliente": 22
+  },
+  {
+   "nombre": "Silvano",
+   "apellido": "Laboy",
+   "correo": "silvano.laboy23@mail.com",
+   "telefono": "3116566701",
+   "contrasena": "cliente23123",
+   "id_cliente": 23
+  },
+  {
+   "nombre": "Lorena",
+   "apellido": "Tovar",
+   "correo": "lorena.tovar24@mail.com",
+   "telefono": "0651333872",
+   "contrasena": "cliente24123",
+   "id_cliente": 24
+  },
+  {
+   "nombre": "Clemente",
+   "apellido": "Lucio",
+   "correo": "clemente.lucio25@mail.com",
+   "telefono": "6247317810",
+   "contrasena": "cliente25123",
+   "id_cliente": 25
+  },
+  {
+   "nombre": "Cornelio",
+   "apellido": "Ocasio",
+   "correo": "cornelio.ocasio26@mail.com",
+   "telefono": "8013267736",
+   "contrasena": "cliente26123",
+   "id_cliente": 26
+  },
+  {
+   "nombre": "Teresa",
+   "apellido": "Carrera",
+   "correo": "teresa.carrera27@mail.com",
+   "telefono": "0260647468",
+   "contrasena": "cliente27123",
+   "id_cliente": 27
+  },
+  {
+   "nombre": "Gerardo",
+   "apellido": "Ballesteros",
+   "correo": "gerardo.ballesteros28@mail.com",
+   "telefono": "7234309805",
+   "contrasena": "cliente28123",
+   "id_cliente": 28
+  },
+  {
+   "nombre": "Carla",
+   "apellido": "Tamayo",
+   "correo": "carla.tamayo29@mail.com",
+   "telefono": "0097882081",
+   "contrasena": "cliente29123",
+   "id_cliente": 29
+  },
+  {
+   "nombre": "Israel",
+   "apellido": "Reséndez",
+   "correo": "israel.reséndez30@mail.com",
+   "telefono": "2191361939",
+   "contrasena": "cliente30123",
+   "id_cliente": 30
+  },
+  {
+   "nombre": "Patricio",
+   "apellido": "Solorzano",
+   "correo": "patricio.solorzano31@mail.com",
+   "telefono": "9091699854",
+   "contrasena": "cliente31123",
+   "id_cliente": 31
+  },
+  {
+   "nombre": "Concepción",
+   "apellido": "Centeno",
+   "correo": "concepción.centeno32@mail.com",
+   "telefono": "3534624751",
+   "contrasena": "cliente32123",
+   "id_cliente": 32
+  },
+  {
+   "nombre": "Evelio",
+   "apellido": "Razo",
+   "correo": "evelio.razo33@mail.com",
+   "telefono": "0799118384",
+   "contrasena": "cliente33123",
+   "id_cliente": 33
+  },
+  {
+   "nombre": "Cristobal",
+   "apellido": "de la O",
+   "correo": "cristobal.delao34@mail.com",
+   "telefono": "2513542784",
+   "contrasena": "cliente34123",
+   "id_cliente": 34
+  },
+  {
+   "nombre": "Andrés",
+   "apellido": "Pacheco",
+   "correo": "andrés.pacheco35@mail.com",
+   "telefono": "9808412411",
+   "contrasena": "cliente35123",
+   "id_cliente": 35
+  },
+  {
+   "nombre": "Adriana",
+   "apellido": "Soliz",
+   "correo": "adriana.soliz36@mail.com",
+   "telefono": "8244935348",
+   "contrasena": "cliente36123",
+   "id_cliente": 36
+  },
+  {
+   "nombre": "Marcela",
+   "apellido": "Mejía",
+   "correo": "marcela.mejía37@mail.com",
+   "telefono": "7401640052",
+   "contrasena": "cliente37123",
+   "id_cliente": 37
+  },
+  {
+   "nombre": "Miguel Ángel",
+   "apellido": "Pulido",
+   "correo": "miguelángel.pulido38@mail.com",
+   "telefono": "4278680112",
+   "contrasena": "cliente38123",
+   "id_cliente": 38
+  },
+  {
+   "nombre": "Silvia",
+   "apellido": "Valles",
+   "correo": "silvia.valles39@mail.com",
+   "telefono": "8059826204",
+   "contrasena": "cliente39123",
+   "id_cliente": 39
+  },
+  {
+   "nombre": "Zeferino",
+   "apellido": "Ortega",
+   "correo": "zeferino.ortega40@mail.com",
+   "telefono": "5053315869",
+   "contrasena": "cliente40123",
+   "id_cliente": 40
+  },
+  {
+   "nombre": "Gabriela",
+   "apellido": "Noriega",
+   "correo": "gabriela.noriega41@mail.com",
+   "telefono": "2322602563",
+   "contrasena": "cliente41123",
+   "id_cliente": 41
+  },
+  {
+   "nombre": "Luis",
+   "apellido": "Vera",
+   "correo": "luis.vera42@mail.com",
+   "telefono": "4216073375",
+   "contrasena": "cliente42123",
+   "id_cliente": 42
+  },
+  {
+   "nombre": "Espartaco",
+   "apellido": "Zedillo",
+   "correo": "espartaco.zedillo43@mail.com",
+   "telefono": "4330365414",
+   "contrasena": "cliente43123",
+   "id_cliente": 43
+  },
+  {
+   "nombre": "Adela",
+   "apellido": "Vega",
+   "correo": "adela.vega44@mail.com",
+   "telefono": "5868501429",
+   "contrasena": "cliente44123",
+   "id_cliente": 44
+  },
+  {
+   "nombre": "Irma",
+   "apellido": "Franco",
+   "correo": "irma.franco45@mail.com",
+   "telefono": "4019655698",
+   "contrasena": "cliente45123",
+   "id_cliente": 45
+  },
+  {
+   "nombre": "Andrea",
+   "apellido": "Badillo",
+   "correo": "andrea.badillo46@mail.com",
+   "telefono": "1693406088",
+   "contrasena": "cliente46123",
+   "id_cliente": 46
+  },
+  {
+   "nombre": "Oswaldo",
+   "apellido": "Padrón",
+   "correo": "oswaldo.padrón47@mail.com",
+   "telefono": "3561595148",
+   "contrasena": "cliente47123",
+   "id_cliente": 47
+  },
+  {
+   "nombre": "Karina",
+   "apellido": "Elizondo",
+   "correo": "karina.elizondo48@mail.com",
+   "telefono": "4656482366",
+   "contrasena": "cliente48123",
+   "id_cliente": 48
+  },
+  {
+   "nombre": "José María",
+   "apellido": "Tapia",
+   "correo": "josémaría.tapia49@mail.com",
+   "telefono": "2994680443",
+   "contrasena": "cliente49123",
+   "id_cliente": 49
+  },
+  {
+   "nombre": "Emilio",
+   "apellido": "Coronado",
+   "correo": "emilio.coronado50@mail.com",
+   "telefono": "6995777387",
+   "contrasena": "cliente50123",
+   "id_cliente": 50
+  }
+ ],
+ "fotografo": [
+  {
+   "nombre": "María José",
+   "apellido": "Saucedo",
+   "correo": "fotografo1@photosport.com",
+   "telefono": "2148951343",
+   "contrasena": "foto1secure",
+   "id_fotografo": 1,
+   "especialidad": "Fotografía de natación",
+   "experiencia": "3 años",
+   "sobre": "Soy María José y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-1.svg"
+  },
+  {
+   "nombre": "Olga",
+   "apellido": "Montañez",
+   "correo": "fotografo2@photosport.com",
+   "telefono": "3200379176",
+   "contrasena": "foto2secure",
+   "id_fotografo": 2,
+   "especialidad": "Atletismo y carreras de ruta",
+   "experiencia": "5 años",
+   "sobre": "Soy Olga y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-2.svg"
+  },
+  {
+   "nombre": "Pablo",
+   "apellido": "Alcala",
+   "correo": "fotografo3@photosport.com",
+   "telefono": "9367632016",
+   "contrasena": "foto3secure",
+   "id_fotografo": 3,
+   "especialidad": "Triatlón y deportes de resistencia",
+   "experiencia": "7 años",
+   "sobre": "Soy Pablo y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-3.svg"
+  },
+  {
+   "nombre": "Zacarías",
+   "apellido": "de la O",
+   "correo": "fotografo4@photosport.com",
+   "telefono": "3287083172",
+   "contrasena": "foto4secure",
+   "id_fotografo": 4,
+   "especialidad": "Fotografía de acción",
+   "experiencia": "9 años",
+   "sobre": "Soy Zacarías y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-4.svg"
+  },
+  {
+   "nombre": "Reina",
+   "apellido": "Pantoja",
+   "correo": "fotografo5@photosport.com",
+   "telefono": "7889579868",
+   "contrasena": "foto5secure",
+   "id_fotografo": 5,
+   "especialidad": "Retratos deportivos",
+   "experiencia": "11 años",
+   "sobre": "Soy Reina y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-1.svg"
+  },
+  {
+   "nombre": "Cecilia",
+   "apellido": "Aguirre",
+   "correo": "fotografo6@photosport.com",
+   "telefono": "7277434873",
+   "contrasena": "foto6secure",
+   "id_fotografo": 6,
+   "especialidad": "Deportes acuáticos",
+   "experiencia": "4 años",
+   "sobre": "Soy Cecilia y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-2.svg"
+  },
+  {
+   "nombre": "Luis Miguel",
+   "apellido": "Castellanos",
+   "correo": "fotografo7@photosport.com",
+   "telefono": "4714345581",
+   "contrasena": "foto7secure",
+   "id_fotografo": 7,
+   "especialidad": "Fotografía de natación",
+   "experiencia": "6 años",
+   "sobre": "Soy Luis Miguel y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-3.svg"
+  },
+  {
+   "nombre": "Jaime",
+   "apellido": "Hidalgo",
+   "correo": "fotografo8@photosport.com",
+   "telefono": "2236231665",
+   "contrasena": "foto8secure",
+   "id_fotografo": 8,
+   "especialidad": "Atletismo y carreras de ruta",
+   "experiencia": "8 años",
+   "sobre": "Soy Jaime y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-4.svg"
+  },
+  {
+   "nombre": "Gabriela",
+   "apellido": "Peralta",
+   "correo": "fotografo9@photosport.com",
+   "telefono": "8760366909",
+   "contrasena": "foto9secure",
+   "id_fotografo": 9,
+   "especialidad": "Triatlón y deportes de resistencia",
+   "experiencia": "10 años",
+   "sobre": "Soy Gabriela y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-1.svg"
+  },
+  {
+   "nombre": "Tomás",
+   "apellido": "Barreto",
+   "correo": "fotografo10@photosport.com",
+   "telefono": "6705466889",
+   "contrasena": "foto10secure",
+   "id_fotografo": 10,
+   "especialidad": "Fotografía de acción",
+   "experiencia": "3 años",
+   "sobre": "Soy Tomás y me dedico a la fotografía deportiva en Puebla. Me especializo en capturar los momentos clave de cada competencia y entregar fotos editadas en pocos días.",
+   "foto": "Assets/IMG/demo/perfil-2.svg"
+  }
+ ],
+ "evento": [
+  {
+   "nombre": "Maratón Puebla",
+   "deporte": 0,
+   "fecha_ini": "2026-06-10",
+   "fecha_fin": "2026-06-10",
+   "lugar": "Puebla",
+   "organizador": "Gobierno Puebla",
+   "id_evento": 1
+  },
+  {
+   "nombre": "Triatlón Atlixco",
+   "deporte": 1,
+   "fecha_ini": "2026-07-20",
+   "fecha_fin": "2026-07-20",
+   "lugar": "Atlixco",
+   "organizador": "TriMX",
+   "id_evento": 2
+  },
+  {
+   "nombre": "Copa Universitaria",
+   "deporte": 2,
+   "fecha_ini": "2026-08-15",
+   "fecha_fin": "2026-08-17",
+   "lugar": "UDLAP",
+   "organizador": "Universidades MX",
+   "id_evento": 3
+  },
+  {
+   "nombre": "Carrera Nocturna",
+   "deporte": 0,
+   "fecha_ini": "2026-09-05",
+   "fecha_fin": "2026-09-05",
+   "lugar": "Puebla",
+   "organizador": "ITESM Puebla",
+   "id_evento": 4
+  },
+  {
+   "nombre": "Torneo Estatal",
+   "deporte": 1,
+   "fecha_ini": "2026-10-11",
+   "fecha_fin": "2026-10-15",
+   "lugar": "Cholula",
+   "organizador": "Liga Estatal",
+   "id_evento": 5
+  }
+ ],
+ "paquete_fotografico": [
+  {
+   "id_fotografo": 1,
+   "nombre": "Basico",
+   "precio": 1200,
+   "cobertura": "Cobertura completa",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 1
+  },
+  {
+   "id_fotografo": 2,
+   "nombre": "Basico",
+   "precio": 500,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 2
+  },
+  {
+   "id_fotografo": 3,
+   "nombre": "Basico",
+   "precio": 800,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 3
+  },
+  {
+   "id_fotografo": 3,
+   "nombre": "Premium",
+   "precio": 2500,
+   "cobertura": "Cobertura completa",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 4
+  },
+  {
+   "id_fotografo": 4,
+   "nombre": "Basico",
+   "precio": 800,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 5
+  },
+  {
+   "id_fotografo": 4,
+   "nombre": "Premium",
+   "precio": 500,
+   "cobertura": "Cobertura completa",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 6
+  },
+  {
+   "id_fotografo": 5,
+   "nombre": "Basico",
+   "precio": 1200,
+   "cobertura": "Fotos ilimitadas",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 7
+  },
+  {
+   "id_fotografo": 5,
+   "nombre": "Premium",
+   "precio": 800,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 8
+  },
+  {
+   "id_fotografo": 5,
+   "nombre": "VIP",
+   "precio": 800,
+   "cobertura": "Fotos ilimitadas",
+   "descripcion": "Paquete VIP para eventos deportivos",
+   "id_paquete": 9
+  },
+  {
+   "id_fotografo": 5,
+   "nombre": "Ultra",
+   "precio": 500,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete Ultra para eventos deportivos",
+   "id_paquete": 10
+  },
+  {
+   "id_fotografo": 6,
+   "nombre": "Basico",
+   "precio": 2500,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 11
+  },
+  {
+   "id_fotografo": 6,
+   "nombre": "Premium",
+   "precio": 1800,
+   "cobertura": "Cobertura completa",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 12
+  },
+  {
+   "id_fotografo": 6,
+   "nombre": "VIP",
+   "precio": 500,
+   "cobertura": "Cobertura completa",
+   "descripcion": "Paquete VIP para eventos deportivos",
+   "id_paquete": 13
+  },
+  {
+   "id_fotografo": 7,
+   "nombre": "Basico",
+   "precio": 1200,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 14
+  },
+  {
+   "id_fotografo": 8,
+   "nombre": "Basico",
+   "precio": 1200,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 15
+  },
+  {
+   "id_fotografo": 9,
+   "nombre": "Basico",
+   "precio": 500,
+   "cobertura": "Fotos ilimitadas",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 16
+  },
+  {
+   "id_fotografo": 9,
+   "nombre": "Premium",
+   "precio": 500,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 17
+  },
+  {
+   "id_fotografo": 9,
+   "nombre": "VIP",
+   "precio": 1800,
+   "cobertura": "Cobertura parcial",
+   "descripcion": "Paquete VIP para eventos deportivos",
+   "id_paquete": 18
+  },
+  {
+   "id_fotografo": 10,
+   "nombre": "Basico",
+   "precio": 1200,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Basico para eventos deportivos",
+   "id_paquete": 19
+  },
+  {
+   "id_fotografo": 10,
+   "nombre": "Premium",
+   "precio": 800,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Premium para eventos deportivos",
+   "id_paquete": 20
+  },
+  {
+   "id_fotografo": 10,
+   "nombre": "VIP",
+   "precio": 800,
+   "cobertura": "Fotos ilimitadas",
+   "descripcion": "Paquete VIP para eventos deportivos",
+   "id_paquete": 21
+  },
+  {
+   "id_fotografo": 10,
+   "nombre": "Ultra",
+   "precio": 2500,
+   "cobertura": "Fotos de premiación",
+   "descripcion": "Paquete Ultra para eventos deportivos",
+   "id_paquete": 22
+  }
+ ],
+ "fotografo_evento": [
+  {
+   "id_fotografo": 1,
+   "id_evento": 2
+  },
+  {
+   "id_fotografo": 1,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 2,
+   "id_evento": 1
+  },
+  {
+   "id_fotografo": 2,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 2,
+   "id_evento": 5
+  },
+  {
+   "id_fotografo": 3,
+   "id_evento": 1
+  },
+  {
+   "id_fotografo": 3,
+   "id_evento": 3
+  },
+  {
+   "id_fotografo": 3,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 3,
+   "id_evento": 5
+  },
+  {
+   "id_fotografo": 4,
+   "id_evento": 1
+  },
+  {
+   "id_fotografo": 4,
+   "id_evento": 2
+  },
+  {
+   "id_fotografo": 4,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 4,
+   "id_evento": 5
+  },
+  {
+   "id_fotografo": 5,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 6,
+   "id_evento": 2
+  },
+  {
+   "id_fotografo": 6,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 7,
+   "id_evento": 3
+  },
+  {
+   "id_fotografo": 8,
+   "id_evento": 2
+  },
+  {
+   "id_fotografo": 8,
+   "id_evento": 3
+  },
+  {
+   "id_fotografo": 8,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 8,
+   "id_evento": 5
+  },
+  {
+   "id_fotografo": 9,
+   "id_evento": 2
+  },
+  {
+   "id_fotografo": 9,
+   "id_evento": 3
+  },
+  {
+   "id_fotografo": 9,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 10,
+   "id_evento": 1
+  },
+  {
+   "id_fotografo": 10,
+   "id_evento": 4
+  },
+  {
+   "id_fotografo": 10,
+   "id_evento": 5
+  }
+ ],
+ "compra": [
+  {
+   "id_cliente": 1,
+   "id_paquete": 14,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 1,
+   "fecha": "2026-08-08",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 1,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 2,
+   "fecha": "2026-08-22",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 2,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 3,
+   "fecha": "2026-08-15",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 2,
+   "id_paquete": 20,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 4,
+   "fecha": "2026-09-13",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 3,
+   "id_paquete": 1,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 5,
+   "fecha": "2026-08-01",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 3,
+   "id_paquete": 6,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 6,
+   "fecha": "2026-08-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 4,
+   "id_paquete": 9,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 7,
+   "fecha": "2026-09-01",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 4,
+   "id_paquete": 20,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 8,
+   "fecha": "2026-09-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 5,
+   "id_paquete": 1,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 9,
+   "fecha": "2026-07-02",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 5,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 10,
+   "fecha": "2026-08-11",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 5,
+   "id_paquete": 18,
+   "id_evento": 2,
+   "entregado": 1,
+   "id_compra": 11,
+   "fecha": "2026-06-18",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 6,
+   "id_paquete": 21,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 12,
+   "fecha": "2026-09-02",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 6,
+   "id_paquete": 15,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 13,
+   "fecha": "2026-07-19",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 7,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 14,
+   "fecha": "2026-08-28",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 7,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 15,
+   "fecha": "2026-08-21",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 8,
+   "id_paquete": 12,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 16,
+   "fecha": "2026-08-14",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 8,
+   "id_paquete": 17,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 17,
+   "fecha": "2026-07-17",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 8,
+   "id_paquete": 18,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 18,
+   "fecha": "2026-07-10",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 9,
+   "id_paquete": 15,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 19,
+   "fecha": "2026-07-24",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 9,
+   "id_paquete": 9,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 20,
+   "fecha": "2026-08-31",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 9,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 21,
+   "fecha": "2026-08-24",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 10,
+   "id_paquete": 18,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 22,
+   "fecha": "2026-08-17",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 10,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 23,
+   "fecha": "2026-08-10",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 10,
+   "id_paquete": 16,
+   "id_evento": 3,
+   "entregado": 1,
+   "id_compra": 24,
+   "fecha": "2026-07-13",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 11,
+   "id_paquete": 17,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 25,
+   "fecha": "2026-07-27",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 11,
+   "id_paquete": 4,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 26,
+   "fecha": "2026-08-13",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 11,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 27,
+   "fecha": "2026-08-27",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 12,
+   "id_paquete": 1,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 28,
+   "fecha": "2026-07-04",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 12,
+   "id_paquete": 2,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 29,
+   "fecha": "2026-05-18",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 13,
+   "id_paquete": 5,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 30,
+   "fecha": "2026-09-11",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 13,
+   "id_paquete": 1,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 31,
+   "fecha": "2026-07-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 14,
+   "id_paquete": 15,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 32,
+   "fecha": "2026-07-23",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 14,
+   "id_paquete": 2,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 33,
+   "fecha": "2026-08-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 15,
+   "id_paquete": 3,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 34,
+   "fecha": "2026-09-28",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 16,
+   "id_paquete": 19,
+   "id_evento": 5,
+   "entregado": 1,
+   "id_compra": 35,
+   "fecha": "2026-09-21",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 17,
+   "id_paquete": 5,
+   "id_evento": 2,
+   "entregado": 1,
+   "id_compra": 36,
+   "fecha": "2026-06-23",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 18,
+   "id_paquete": 3,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 37,
+   "fecha": "2026-07-12",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 18,
+   "id_paquete": 18,
+   "id_evento": 3,
+   "entregado": 1,
+   "id_compra": 38,
+   "fecha": "2026-07-05",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 19,
+   "id_paquete": 20,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 39,
+   "fecha": "2026-06-07",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 19,
+   "id_paquete": 13,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 40,
+   "fecha": "2026-08-26",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 19,
+   "id_paquete": 10,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 41,
+   "fecha": "2026-08-19",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 20,
+   "id_paquete": 20,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 42,
+   "fecha": "2026-05-17",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 20,
+   "id_paquete": 4,
+   "id_evento": 3,
+   "entregado": 1,
+   "id_compra": 43,
+   "fecha": "2026-07-15",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 20,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 44,
+   "fecha": "2026-07-29",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 21,
+   "id_paquete": 6,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 45,
+   "fecha": "2026-07-20",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 22,
+   "id_paquete": 3,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 46,
+   "fecha": "2026-08-08",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 22,
+   "id_paquete": 14,
+   "id_evento": 3,
+   "entregado": 1,
+   "id_compra": 47,
+   "fecha": "2026-08-01",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 22,
+   "id_paquete": 20,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 48,
+   "fecha": "2026-08-15",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 23,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 49,
+   "fecha": "2026-08-08",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 24,
+   "id_paquete": 15,
+   "id_evento": 2,
+   "entregado": 1,
+   "id_compra": 50,
+   "fecha": "2026-06-15",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 24,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 51,
+   "fecha": "2026-07-25",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 25,
+   "id_paquete": 22,
+   "id_evento": 1,
+   "entregado": 0,
+   "id_compra": 52,
+   "fecha": "2026-06-06",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 25,
+   "id_paquete": 4,
+   "id_evento": 3,
+   "entregado": 1,
+   "id_compra": 53,
+   "fecha": "2026-08-04",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 25,
+   "id_paquete": 5,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 54,
+   "fecha": "2026-08-18",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 26,
+   "id_paquete": 2,
+   "id_evento": 1,
+   "entregado": 0,
+   "id_compra": 55,
+   "fecha": "2026-05-16",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 27,
+   "id_paquete": 19,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 56,
+   "fecha": "2026-08-04",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 27,
+   "id_paquete": 4,
+   "id_evento": 5,
+   "entregado": 1,
+   "id_compra": 57,
+   "fecha": "2026-09-02",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 27,
+   "id_paquete": 10,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 58,
+   "fecha": "2026-09-04",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 28,
+   "id_paquete": 18,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 59,
+   "fecha": "2026-08-07",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 28,
+   "id_paquete": 3,
+   "id_evento": 1,
+   "entregado": 0,
+   "id_compra": 60,
+   "fecha": "2026-05-26",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 28,
+   "id_paquete": 11,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 61,
+   "fecha": "2026-08-14",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 29,
+   "id_paquete": 8,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 62,
+   "fecha": "2026-08-07",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 30,
+   "id_paquete": 19,
+   "id_evento": 1,
+   "entregado": 0,
+   "id_compra": 63,
+   "fecha": "2026-05-05",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 30,
+   "id_paquete": 16,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 64,
+   "fecha": "2026-07-24",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 31,
+   "id_paquete": 9,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 65,
+   "fecha": "2026-08-31",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 31,
+   "id_paquete": 14,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 66,
+   "fecha": "2026-08-03",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 32,
+   "id_paquete": 12,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 67,
+   "fecha": "2026-08-17",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 32,
+   "id_paquete": 11,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 68,
+   "fecha": "2026-06-24",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 33,
+   "id_paquete": 14,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 69,
+   "fecha": "2026-07-13",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 33,
+   "id_paquete": 22,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 70,
+   "fecha": "2026-07-27",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 34,
+   "id_paquete": 15,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 71,
+   "fecha": "2026-07-18",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 35,
+   "id_paquete": 11,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 72,
+   "fecha": "2026-07-11",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 35,
+   "id_paquete": 17,
+   "id_evento": 2,
+   "entregado": 1,
+   "id_compra": 73,
+   "fecha": "2026-07-04",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 36,
+   "id_paquete": 15,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 74,
+   "fecha": "2026-09-18",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 36,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 75,
+   "fecha": "2026-08-06",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 36,
+   "id_paquete": 16,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 76,
+   "fecha": "2026-07-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 37,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 77,
+   "fecha": "2026-07-23",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 38,
+   "id_paquete": 10,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 78,
+   "fecha": "2026-08-30",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 39,
+   "id_paquete": 4,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 79,
+   "fecha": "2026-05-28",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 39,
+   "id_paquete": 20,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 80,
+   "fecha": "2026-05-21",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 40,
+   "id_paquete": 10,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 81,
+   "fecha": "2026-08-09",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 41,
+   "id_paquete": 3,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 82,
+   "fecha": "2026-07-12",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 41,
+   "id_paquete": 15,
+   "id_evento": 2,
+   "entregado": 1,
+   "id_compra": 83,
+   "fecha": "2026-06-09",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 42,
+   "id_paquete": 16,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 84,
+   "fecha": "2026-09-02",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 43,
+   "id_paquete": 9,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 85,
+   "fecha": "2026-08-26",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 43,
+   "id_paquete": 16,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 86,
+   "fecha": "2026-07-03",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 43,
+   "id_paquete": 18,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 87,
+   "fecha": "2026-06-26",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 44,
+   "id_paquete": 20,
+   "id_evento": 5,
+   "entregado": 1,
+   "id_compra": 88,
+   "fecha": "2026-09-10",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 45,
+   "id_paquete": 3,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 89,
+   "fecha": "2026-07-29",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 46,
+   "id_paquete": 17,
+   "id_evento": 3,
+   "entregado": 0,
+   "id_compra": 90,
+   "fecha": "2026-08-15",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 46,
+   "id_paquete": 10,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 91,
+   "fecha": "2026-08-29",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 47,
+   "id_paquete": 22,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 92,
+   "fecha": "2026-08-22",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 47,
+   "id_paquete": 15,
+   "id_evento": 5,
+   "entregado": 0,
+   "id_compra": 93,
+   "fecha": "2026-09-20",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 47,
+   "id_paquete": 11,
+   "id_evento": 4,
+   "entregado": 0,
+   "id_compra": 94,
+   "fecha": "2026-08-08",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 48,
+   "id_paquete": 7,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 95,
+   "fecha": "2026-08-01",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 48,
+   "id_paquete": 13,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 96,
+   "fecha": "2026-06-08",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 49,
+   "id_paquete": 11,
+   "id_evento": 4,
+   "entregado": 1,
+   "id_compra": 97,
+   "fecha": "2026-09-01",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 50,
+   "id_paquete": 13,
+   "id_evento": 2,
+   "entregado": 0,
+   "id_compra": 98,
+   "fecha": "2026-07-09",
+   "metodo_pago": "tarjeta"
+  },
+  {
+   "id_cliente": 50,
+   "id_paquete": 2,
+   "id_evento": 1,
+   "entregado": 1,
+   "id_compra": 99,
+   "fecha": "2026-05-23",
+   "metodo_pago": "tarjeta"
+  }
+ ],
+ "solicitud_evento": [],
+ "foto_entregada": [
+  {
+   "id_foto_entregada": 1,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 3,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 2,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 3,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 3,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 3,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 4,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 11,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 5,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 11,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 6,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 11,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 7,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 14,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 8,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 14,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 9,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 14,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 10,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 15,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 11,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 15,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 12,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 15,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 13,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 16,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 14,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 16,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 15,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 16,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 16,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 23,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 17,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 23,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 18,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 23,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 19,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 24,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 20,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 24,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 21,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 24,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 22,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 29,
+   "id_fotografo": 2
+  },
+  {
+   "id_foto_entregada": 23,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 29,
+   "id_fotografo": 2
+  },
+  {
+   "id_foto_entregada": 24,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 29,
+   "id_fotografo": 2
+  },
+  {
+   "id_foto_entregada": 25,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 35,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 26,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 35,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 27,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 35,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 28,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 36,
+   "id_fotografo": 4
+  },
+  {
+   "id_foto_entregada": 29,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 36,
+   "id_fotografo": 4
+  },
+  {
+   "id_foto_entregada": 30,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 36,
+   "id_fotografo": 4
+  },
+  {
+   "id_foto_entregada": 31,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 38,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 32,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 38,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 33,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 38,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 34,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 39,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 35,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 39,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 36,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 39,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 37,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 42,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 38,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 42,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 39,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 42,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 40,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 43,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 41,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 43,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 42,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 43,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 43,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 44,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 44,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 44,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 45,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 44,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 46,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 47,
+   "id_fotografo": 7
+  },
+  {
+   "id_foto_entregada": 47,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 47,
+   "id_fotografo": 7
+  },
+  {
+   "id_foto_entregada": 48,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 47,
+   "id_fotografo": 7
+  },
+  {
+   "id_foto_entregada": 49,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 49,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 50,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 49,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 51,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 49,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 52,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 50,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 53,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 50,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 54,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 50,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 55,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 51,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 56,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 51,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 57,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 51,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 58,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 53,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 59,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 53,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 60,
+   "fecha": "2026-08-17",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 53,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 61,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 57,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 62,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 57,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 63,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 57,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 64,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 62,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 65,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 62,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 66,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 62,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 67,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 64,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 68,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 64,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 69,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 64,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 70,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 65,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 71,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 65,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 72,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 65,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 73,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 70,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 74,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 70,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 75,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 70,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 76,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 73,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 77,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 73,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 78,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 73,
+   "id_fotografo": 9
+  },
+  {
+   "id_foto_entregada": 79,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 75,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 80,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 75,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 81,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 75,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 82,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 77,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 83,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 77,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 84,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 77,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 85,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-7.svg",
+   "id_compra": 78,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 86,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 78,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 87,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 78,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 88,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 79,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 89,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 79,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 90,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 79,
+   "id_fotografo": 3
+  },
+  {
+   "id_foto_entregada": 91,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 80,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 92,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 80,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 93,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 80,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 94,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 81,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 95,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 81,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 96,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 81,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 97,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 83,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 98,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 83,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 99,
+   "fecha": "2026-07-20",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 83,
+   "id_fotografo": 8
+  },
+  {
+   "id_foto_entregada": 100,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 88,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 101,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 88,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 102,
+   "fecha": "2026-10-15",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 88,
+   "id_fotografo": 10
+  },
+  {
+   "id_foto_entregada": 103,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 91,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 104,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 91,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 105,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 91,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 106,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-8.svg",
+   "id_compra": 95,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 107,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-1.svg",
+   "id_compra": 95,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 108,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 95,
+   "id_fotografo": 5
+  },
+  {
+   "id_foto_entregada": 109,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-2.svg",
+   "id_compra": 97,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 110,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-3.svg",
+   "id_compra": 97,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 111,
+   "fecha": "2026-09-05",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 97,
+   "id_fotografo": 6
+  },
+  {
+   "id_foto_entregada": 112,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-4.svg",
+   "id_compra": 99,
+   "id_fotografo": 2
+  },
+  {
+   "id_foto_entregada": 113,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-5.svg",
+   "id_compra": 99,
+   "id_fotografo": 2
+  },
+  {
+   "id_foto_entregada": 114,
+   "fecha": "2026-06-10",
+   "enlace": "Assets/IMG/demo/foto-6.svg",
+   "id_compra": 99,
+   "id_fotografo": 2
+  }
+ ],
+ "foto_portafolio": [
+  {
+   "id_foto_portafolio": 1,
+   "id_fotografo": 1,
+   "enlace": "Assets/IMG/demo/foto-1.svg"
+  },
+  {
+   "id_foto_portafolio": 2,
+   "id_fotografo": 1,
+   "enlace": "Assets/IMG/demo/foto-4.svg"
+  },
+  {
+   "id_foto_portafolio": 3,
+   "id_fotografo": 1,
+   "enlace": "Assets/IMG/demo/foto-7.svg"
+  },
+  {
+   "id_foto_portafolio": 4,
+   "id_fotografo": 1,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 5,
+   "id_fotografo": 2,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 6,
+   "id_fotografo": 2,
+   "enlace": "Assets/IMG/demo/foto-5.svg"
+  },
+  {
+   "id_foto_portafolio": 7,
+   "id_fotografo": 2,
+   "enlace": "Assets/IMG/demo/foto-8.svg"
+  },
+  {
+   "id_foto_portafolio": 8,
+   "id_fotografo": 2,
+   "enlace": "Assets/IMG/demo/foto-3.svg"
+  },
+  {
+   "id_foto_portafolio": 9,
+   "id_fotografo": 3,
+   "enlace": "Assets/IMG/demo/foto-3.svg"
+  },
+  {
+   "id_foto_portafolio": 10,
+   "id_fotografo": 3,
+   "enlace": "Assets/IMG/demo/foto-6.svg"
+  },
+  {
+   "id_foto_portafolio": 11,
+   "id_fotografo": 3,
+   "enlace": "Assets/IMG/demo/foto-1.svg"
+  },
+  {
+   "id_foto_portafolio": 12,
+   "id_fotografo": 3,
+   "enlace": "Assets/IMG/demo/foto-4.svg"
+  },
+  {
+   "id_foto_portafolio": 13,
+   "id_fotografo": 4,
+   "enlace": "Assets/IMG/demo/foto-4.svg"
+  },
+  {
+   "id_foto_portafolio": 14,
+   "id_fotografo": 4,
+   "enlace": "Assets/IMG/demo/foto-7.svg"
+  },
+  {
+   "id_foto_portafolio": 15,
+   "id_fotografo": 4,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 16,
+   "id_fotografo": 4,
+   "enlace": "Assets/IMG/demo/foto-5.svg"
+  },
+  {
+   "id_foto_portafolio": 17,
+   "id_fotografo": 5,
+   "enlace": "Assets/IMG/demo/foto-5.svg"
+  },
+  {
+   "id_foto_portafolio": 18,
+   "id_fotografo": 5,
+   "enlace": "Assets/IMG/demo/foto-8.svg"
+  },
+  {
+   "id_foto_portafolio": 19,
+   "id_fotografo": 5,
+   "enlace": "Assets/IMG/demo/foto-3.svg"
+  },
+  {
+   "id_foto_portafolio": 20,
+   "id_fotografo": 5,
+   "enlace": "Assets/IMG/demo/foto-6.svg"
+  },
+  {
+   "id_foto_portafolio": 21,
+   "id_fotografo": 6,
+   "enlace": "Assets/IMG/demo/foto-6.svg"
+  },
+  {
+   "id_foto_portafolio": 22,
+   "id_fotografo": 6,
+   "enlace": "Assets/IMG/demo/foto-1.svg"
+  },
+  {
+   "id_foto_portafolio": 23,
+   "id_fotografo": 6,
+   "enlace": "Assets/IMG/demo/foto-4.svg"
+  },
+  {
+   "id_foto_portafolio": 24,
+   "id_fotografo": 6,
+   "enlace": "Assets/IMG/demo/foto-7.svg"
+  },
+  {
+   "id_foto_portafolio": 25,
+   "id_fotografo": 7,
+   "enlace": "Assets/IMG/demo/foto-7.svg"
+  },
+  {
+   "id_foto_portafolio": 26,
+   "id_fotografo": 7,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 27,
+   "id_fotografo": 7,
+   "enlace": "Assets/IMG/demo/foto-5.svg"
+  },
+  {
+   "id_foto_portafolio": 28,
+   "id_fotografo": 7,
+   "enlace": "Assets/IMG/demo/foto-8.svg"
+  },
+  {
+   "id_foto_portafolio": 29,
+   "id_fotografo": 8,
+   "enlace": "Assets/IMG/demo/foto-8.svg"
+  },
+  {
+   "id_foto_portafolio": 30,
+   "id_fotografo": 8,
+   "enlace": "Assets/IMG/demo/foto-3.svg"
+  },
+  {
+   "id_foto_portafolio": 31,
+   "id_fotografo": 8,
+   "enlace": "Assets/IMG/demo/foto-6.svg"
+  },
+  {
+   "id_foto_portafolio": 32,
+   "id_fotografo": 8,
+   "enlace": "Assets/IMG/demo/foto-1.svg"
+  },
+  {
+   "id_foto_portafolio": 33,
+   "id_fotografo": 9,
+   "enlace": "Assets/IMG/demo/foto-1.svg"
+  },
+  {
+   "id_foto_portafolio": 34,
+   "id_fotografo": 9,
+   "enlace": "Assets/IMG/demo/foto-4.svg"
+  },
+  {
+   "id_foto_portafolio": 35,
+   "id_fotografo": 9,
+   "enlace": "Assets/IMG/demo/foto-7.svg"
+  },
+  {
+   "id_foto_portafolio": 36,
+   "id_fotografo": 9,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 37,
+   "id_fotografo": 10,
+   "enlace": "Assets/IMG/demo/foto-2.svg"
+  },
+  {
+   "id_foto_portafolio": 38,
+   "id_fotografo": 10,
+   "enlace": "Assets/IMG/demo/foto-5.svg"
+  },
+  {
+   "id_foto_portafolio": 39,
+   "id_fotografo": 10,
+   "enlace": "Assets/IMG/demo/foto-8.svg"
+  },
+  {
+   "id_foto_portafolio": 40,
+   "id_fotografo": 10,
+   "enlace": "Assets/IMG/demo/foto-3.svg"
+  }
+ ],
+ "nombre_deporte": [
+  {
+   "id_deporte": 0,
+   "nombre": "Natación"
+  },
+  {
+   "id_deporte": 1,
+   "nombre": "Atletismo"
+  },
+  {
+   "id_deporte": 2,
+   "nombre": "Triatlón"
+  }
+ ]
+}

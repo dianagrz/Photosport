@@ -4,7 +4,7 @@ let modoFormulario = "crear";
 let paqueteEditando = null;
 const paquetesActuales = new Map();
 
-function mostrarFormulario(){
+function mostrarContenedorFormulario(){
     const formulario = document.getElementById("formulario-paquete");
     if (!formulario) return;
 
@@ -85,7 +85,7 @@ function resetFormularioPaquete() {
 
 function prepararCrearPaquete() {
     resetFormularioPaquete();
-    mostrarFormulario();
+    mostrarContenedorFormulario();
 }
 
 function prepararEditarPaquete(id) {
@@ -106,7 +106,7 @@ function prepararEditarPaquete(id) {
     if (descrip) descrip.value = paquete.descripcion;
     if (submit) submit.textContent = "Guardar cambios";
 
-    mostrarFormulario();
+    mostrarContenedorFormulario();
 }
 
 function initPaquetesPage() {

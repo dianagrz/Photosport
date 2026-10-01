@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Assets/JS/conexion.js",
+    "build:demo": "node scripts/build-demo-seed.js"
   },
   "keywords": [],
   "author": "",

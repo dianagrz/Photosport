@@ -11,7 +11,7 @@ const btn = document.getElementById("perfil-btnContratar");
 
 function getImageUrl(path) {
     if (!path) return "../../Assets/IMG/fondo.jpg";
-    if (String(path).startsWith("http")) return path;
+    if (/^(https?:|data:|blob:)/i.test(String(path))) return path;
     return apiUrl(String(path).startsWith("/") ? path : `/${path}`);
 }
 
